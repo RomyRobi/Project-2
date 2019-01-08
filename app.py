@@ -26,10 +26,13 @@ engine = create_engine("sqlite:///db/airbnb-sqlite.db")
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
+# Base.prepare(db.engine, reflect=True)
 Base.prepare(engine, reflect=True)
 
 # Save references to each table
 NYC = Base.classes.nyc
+
+insp = sqlalchemy.inspect(engine)
 
 session = Session(engine)
 
@@ -44,11 +47,13 @@ def names():
     """Return categoeries of metadata."""
 
     # Use Pandas to perform the sql query
-    stmt = db.session.query(NYC).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+    # stmt = db.session.query(NYC).statement
+    # df = pd.read_sql_query(stmt, db.session.bind)
+    db_list = insp.get_schema_names()
 
     # Return a list of the column names (sample names)
-    return jsonify(list(df.columns)[2:])
+    return jsonify(db_list)
+    # return jsonify(list(df.columns))
 
 
 @app.route("/metadata/<sample>")
