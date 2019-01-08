@@ -17,21 +17,32 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 
-engine = create_engine("sqlite:///db/airbnb-sqlite.db")
+## "create_engine" method
+# engine = create_engine("sqlite:///db/airbnb-sqlite.db")
+#
+# # reflect an existing database into a new model
+# Base = automap_base()
+# # reflect the tables
+# Base.prepare(engine, reflect=True)
+#
+# # Save references to each table
+# NYC = Base.classes.nyc
+#
+# session = Session(engine)
 
-# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/airbnb-sqlite.db"
-# app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
-# db = SQLAlchemy(app)
+# app method
+app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/airbnb-sqlite.db"
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
-Base.prepare(engine, reflect=True)
+Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
 NYC = Base.classes.nyc
 
-session = Session(engine)
 
 @app.route("/")
 def index():
