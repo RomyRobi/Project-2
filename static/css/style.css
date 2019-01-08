@@ -1,49 +1,76 @@
 .header {
   width: 100%;
   color: white;
-  background: #FF5A60;
-  display: flex;
-  justify-content: space-between;
   position: fixed;
+  top: 0px;
   z-index: 6;
 }
 
 .header-logo {
   font-size: 30px;
   font-weight: bold;
-  margin-left: 20px;
+  margin-left: 1rem;
 }
 
 .location-bar {
-  position: relative;
-  padding-top: 100px;
-  background: #F7F7F7;
-  z-index: 4;
-}
-
-.wrapper {
+  width: 100%;
+  position: fixed;
   background-color: #F7F7F7;
-  position: relative;
+  z-index: 4;
 }
 
 .city {
   font-size: 28px;
   font-weight: 300;
   color: #FF5A60;
-  margin-top: 40px;
-  padding-left: 60px;
+  padding-top: 40px;
+  padding-left: 10%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  margin-left: 7rem;
+  margin-top: 9.5rem;
+  padding-top: 20px;
+  background-color: #F7F7F7;
+  z-index: 2;
 }
 
 .leftcol {
-  padding-left: 60px;
-  padding-top: 30px;
+  overflow-y: scroll;
+}
+
+.graphs {
+  padding: 10px;
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: darkgray;
+  border-radius: 15px;
 }
 
 .rightcol {
-  overflow-y: hidden;
-  padding-top: 30px;
+  background-color: white;
+  border-style: solid;
+  border-width: thin;
+  border-color: darkgray;
+  border-radius: 15px;
   position: fixed;
-  left: 41.5%;
+  width: auto;
+}
+
+#map {
+  padding: 10px;
+  overflow: hidden;
+}
+.side-menu {
+  position: fixed;
+  top: 72px;
+  width: 7rem;
+  height: 100%;
+  background-color: white;
+  z-index: 6;
 }
 
 #footer {
