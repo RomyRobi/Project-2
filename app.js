@@ -13,6 +13,14 @@ var boroughs = [
   'Staten Island',
 ]
 
+function statAverage(data, category){
+  total = 0;
+  data.forEach(entry => {
+    total += entry[category];
+  });
+  return total/data.length;
+}
+
 var chartColors = window.chartColors;
 var color = Chart.helpers.color;
 var backgroundColors = [
@@ -101,7 +109,7 @@ d3.csv(csv, function(listingsData) {
 
   console.log(listingsData);
 
-
+  // Event Listener for "Listings"
   document.getElementById('listingsCount').addEventListener('click', function() {
     listingsCounts = [];
     boroughs.forEach(borough => {
@@ -109,10 +117,73 @@ d3.csv(csv, function(listingsData) {
       boroughCount = boroughData.length;
       listingsCounts.push(boroughCount);
     });
-    console.log(listingsCounts);
     config.data.datasets[0].data = listingsCounts;
     config.options.title.text = 'Number of Listings by Borough'
-    console.log(config);
+    myChart.update();
+  });
+
+  // Event Listener for "Prices"
+  document.getElementById('avgPrice').addEventListener('click', function() {
+    listingsAvg = [];
+    boroughs.forEach(borough => {
+      boroughData = listingsData.filter(listing => listing.neighbourhood_group_cleansed == borough);
+      boroughAvg = statAverage(boroughData, 'price');
+      listingsAvg.push(boroughAvg);
+    });
+    config.data.datasets[0].data = listingsAvg;
+    config.options.title.text = 'Avg Listing Price ($) by Borough'
+    myChart.update();
+  });
+
+  // Event Listener for "Review Scores"
+  document.getElementById('avgScore').addEventListener('click', function() {
+    listingsAvg = [];
+    boroughs.forEach(borough => {
+      boroughData = listingsData.filter(listing => listing.neighbourhood_group_cleansed == borough);
+      boroughAvg = statAverage(boroughData, 'review_scores_rating');
+      listingsAvg.push(boroughAvg);
+    });
+    config.data.datasets[0].data = listingsAvg;
+    config.options.title.text = 'Avg Review Score by Borough'
+    myChart.update();
+  });
+
+  // Event Listener for "Location Scores"
+  document.getElementById('avgLocScore').addEventListener('click', function() {
+    listingsAvg = [];
+    boroughs.forEach(borough => {
+      boroughData = listingsData.filter(listing => listing.neighbourhood_group_cleansed == borough);
+      boroughAvg = statAverage(boroughData, 'review_scores_location');
+      listingsAvg.push(boroughAvg);
+    });
+    config.data.datasets[0].data = listingsAvg;
+    config.options.title.text = 'Avg Location Score by Borough'
+    myChart.update();
+  });
+
+  // Event Listener for "Guests Accommodated"
+  document.getElementById('avgAccomodations').addEventListener('click', function() {
+    listingsAvg = [];
+    boroughs.forEach(borough => {
+      boroughData = listingsData.filter(listing => listing.neighbourhood_group_cleansed == borough);
+      boroughAvg = statAverage(boroughData, 'accommodates');
+      listingsAvg.push(boroughAvg);
+    });
+    config.data.datasets[0].data = listingsAvg;
+    config.options.title.text = 'Avg Guests Accommodated by Borough'
+    myChart.update();
+  });
+
+  // Event Listener for "Minimum Nights"
+  document.getElementById('avgMinNights').addEventListener('click', function() {
+    listingsAvg = [];
+    boroughs.forEach(borough => {
+      boroughData = listingsData.filter(listing => listing.neighbourhood_group_cleansed == borough);
+      boroughAvg = statAverage(boroughData, 'minimum_nights');
+      listingsAvg.push(boroughAvg);
+    });
+    config.data.datasets[0].data = listingsAvg;
+    config.options.title.text = 'Avg Minimum Stay by Borough'
     myChart.update();
   });
 
