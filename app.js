@@ -1,9 +1,10 @@
-// var randomScalingFactor = function() {
-//   return Math.round(Math.random() * 100);
-// };
-var chosenVar = 'listingsCount';
-
-var ctx = document.getElementById('polar-chart-area');
+function statAverage(data, category){
+  total = 0;
+  data.forEach(entry => {
+    total += entry[category];
+  });
+  return total/data.length;
+}
 
 var boroughs = [
   'Bronx',
@@ -13,14 +14,9 @@ var boroughs = [
   'Staten Island',
 ]
 
-function statAverage(data, category){
-  total = 0;
-  data.forEach(entry => {
-    total += entry[category];
-  });
-  return total/data.length;
-}
 
+// Set up chart
+var ctx = document.getElementById('polar-chart-area');
 var chartColors = window.chartColors;
 var color = Chart.helpers.color;
 var backgroundColors = [
@@ -30,8 +26,6 @@ var backgroundColors = [
   color(chartColors.green).alpha(0.5).rgbString(),
   color(chartColors.blue).alpha(0.5).rgbString(),
 ];
-
-var chartTitle ='Choose a Category to View'
 var chartOptions = {
   responsive: true,
   legend: {
@@ -39,7 +33,7 @@ var chartOptions = {
   },
   title: {
     display: true,
-    text: chartTitle
+    text: 'Choose a Category to View'
   },
   scale: {
     ticks: {
@@ -188,25 +182,3 @@ d3.csv(csv, function(listingsData) {
   });
 
 });
-
-
-// var colorNames = Object.keys(window.chartColors);
-// document.getElementById('addData').addEventListener('click', function() {
-//   if (config.data.datasets.length > 0) {
-//     config.data.labels.push('data #' + config.data.labels.length);
-//     config.data.datasets.forEach(function(dataset) {
-//       var colorName = colorNames[config.data.labels.length % colorNames.length];
-//       dataset.backgroundColor.push(window.chartColors[colorName]);
-//       dataset.data.push(randomScalingFactor());
-//     });
-//     window.myPolarArea.update();
-//   }
-// });
-// document.getElementById('removeData').addEventListener('click', function() {
-//   config.data.labels.pop(); // remove the label first
-//   config.data.datasets.forEach(function(dataset) {
-//     dataset.backgroundColor.pop();
-//     dataset.data.pop();
-//   });
-//   window.myPolarArea.update();
-// });
