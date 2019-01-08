@@ -1,0 +1,64 @@
+.header {
+  width: 100%;
+  color: white;
+  background: #FF5A60;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 6;
+}
+
+.header-logo {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.location-bar {
+  position: relative;
+  padding-top: 100px;
+  background: #F7F7F7;
+  z-index: 4;
+}
+
+.wrapper {
+  background-color: #F7F7F7;
+  position: relative;
+}
+
+.city {
+  font-size: 28px;
+  font-weight: 300;
+  color: #FF5A60;
+  margin-top: 40px;
+  padding-left: 60px;
+}
+
+.leftcol {
+  padding-left: 60px;
+  padding-top: 30px;
+}
+
+.rightcol {
+  overflow-y: hidden;
+  padding-top: 30px;
+  position: fixed;
+  left: 41.5%;
+}
+
+#footer {
+  position: relative;
+  bottom: 0;
+  width: 100%; /* Set the fixed height of the footer here */
+  height: 10px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  background-color: #F7F7F7;
+}
+
+@media (min-width: 768px) {
+  .header {
+      justify-content: space-between;
+      height: 60px;
+  }
+}
