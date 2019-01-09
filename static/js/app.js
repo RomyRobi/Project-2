@@ -33,7 +33,7 @@ var chartOptions = {
   title: {
     display: true,
     text: 'Choose a Category to View',
-    fontSize: 30
+    fontSize: 20
   },
   scale: {
     ticks: {
@@ -71,8 +71,8 @@ var myChart = new Chart(ctx, config);
 
 const csv = "listings.csv"
 
-d3.csv(csv, function(listingsData) {
-
+d3.csv(csv).then(function(listingsData) {
+ console.log(listingsData)
   //// Code for abridging data. Only NAN returned for unknown reason
   // var polarData = [];
   // var currData ={};
