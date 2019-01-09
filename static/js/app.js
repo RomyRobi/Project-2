@@ -69,10 +69,9 @@ var config = {
 var myChart = new Chart(ctx, config);
 
 
-const csv = "listings.csv"
+const csv = "static/listings.csv"
 
 d3.csv(csv).then(function(listingsData) {
- console.log(listingsData)
   //// Code for abridging data. Only NAN returned for unknown reason
   // var polarData = [];
   // var currData ={};
