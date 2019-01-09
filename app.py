@@ -80,7 +80,7 @@ def historical_names():
 
     # Return a list of the column names (sample names)
     return jsonify(list(df.columns)[2:])
-s
+
 
 
 @app.route("/metadata/<sample>")
