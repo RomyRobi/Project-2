@@ -8,6 +8,15 @@
   <title>XPLORbnb</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
   <link rel="stylesheet" href="../static/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+	<script src="static/js/utils.js"></script>
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
 </head>
 <body>
   <div class="header">
@@ -38,24 +47,15 @@
             <div class="col-md-12 text-center">
               <div class="graphs">
                 <div id="avgDailyRate">
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
-                  test
-                  <br>
+                  	<div id="canvas-holder" style="width:50%">
+                  		<canvas id="polar-chart-area"></canvas>
+                  	</div>
+                  	<button id="listingsCount">Listings</button>
+                  	<button id="avgPrice">Prices</button>
+                  	<button id="avgAccomodations">Guests Accommodated</button>
+                  	<button id="avgMinNights">Minimum Stay</button>
+                  	<button id="avgScore">Review Scores</button>
+                  	<button id="avgLocScore">Location Scores</button>
                   <!-- append avgDailyRate graph here -->
                 </div>
               </div>
@@ -148,17 +148,17 @@
       </div>
       <div class="p-3">
         <div>
-          <img src="../images/adam.jpeg" class="img-fluid rounded-circle" alt="Adam DeBruler">
+          <img src="images/adam.jpeg" class="img-fluid rounded-circle" alt="Adam DeBruler">
         </div>
       </div>
       <div class="p-3">
         <div>
-          <img src="../images/meghana.jpg" class="img-fluid rounded-circle" alt="Meghana Bhimasani">
+          <img src="images/meghana.jpg" class="img-fluid rounded-circle" alt="Meghana Bhimasani">
         </div>
       </div>
       <div class="p-3">
         <div>
-          <img src="../images/romy.jpeg" class="img-fluid rounded-circle" alt="Romy Robillard">
+          <img src="images/romy.jpeg" class="img-fluid rounded-circle" alt="Romy Robillard">
         </div>
       </div>
     </div>
@@ -173,5 +173,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
   <script src="https://d3js.org/d3.v5.min.js"></script>
+	<script type="text/javascript" src='static/js/app.js'></script>
 </body>
 </html>

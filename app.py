@@ -52,14 +52,17 @@ def index():
 
 @app.route("/api/metadata")
 def names():
-    """Return categoeries of metadata."""
+    """Return categories of metadata."""
 
     # Use Pandas to perform the sql query
-    stmt = db.session.query(NYC).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+    # stmt = db.session.query(NYC).statement
+    # df = pd.read_sql_query(stmt, db.session.bind)
 
     # Return a list of the column names (sample names)
-    return jsonify(list(df.columns)[2:])
+    # return jsonify(list(df.columns)[2:])
+    # results =db.session.query()
+
+    return jsonify(list(NYC.columns))
 
 
 @app.route("/metadata/<sample>")
