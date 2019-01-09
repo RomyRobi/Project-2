@@ -8,10 +8,10 @@ def create_connection(db_file):
     try:
         conn = sqlite3.connect(db_file)
         cur = conn.cursor()
-        cur.execute("CREATE TABLE nyc (id INTEGER PRIMARY KEY,listing_url TEXT,name TEXT,host_id INT,\
-                    neighbourhood_cleansed TEXT,neighbourhood_group_cleansed TEXT,\
-                    city TEXT,zipcode INTEGER, latitude INTEGER,longitude INTEGER, property_type TEXT, room_type TEXT,accommodates INTEGER, \
-                    amenities TEXT,price INTEGER, number_of_reviews INTEGER ,first_review date DATE,review_scores_rating INTEGER);")
+        cur.execute("CREATE TABLE nyc (id INTEGER PRIMARY KEY,listing_url TEXT,name TEXT, host_id INTEGER,\
+                    neighbourhood_cleansed TEXT, neighbourhood_group_cleansed TEXT,\
+                    city TEXT, zipcode TEXT, latitude TEXT,longitude TEXT, property_type TEXT, room_type TEXT, accommodates TEXT, \
+                    amenities TEXT, price INTEGER, number_of_reviews INTEGER, first_review TEXT,review_scores_rating TEXT);")
         csvfile = "listings.csv"
         df = pd.read_csv(csvfile)
         print(df.head())

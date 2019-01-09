@@ -9,7 +9,7 @@ def create_connection(db_file):
         conn = sqlite3.connect(db_file)
         cur = conn.cursor()
         cur.execute("CREATE TABLE nyc_hist (id INTEGER PRIMARY KEY, Date TEXT, Price INTEGER, Neighborhood INTEGER, \
-                    Borough TEXT, Latitude INTEGER, Longitude INTEGER, Review INTEGER, Room_Type TEXT);")
+                    Borough TEXT, Latitude TEXT, Longitude TEXT, Review TEXT, Room_Type TEXT);")
         csvfile = "historical_data.csv"
         df = pd.read_csv(csvfile)
         print(df.head())
@@ -26,4 +26,4 @@ def create_connection(db_file):
         conn.close()
 
 if __name__ == '__main__':
-    create_connection("../db/historical-sqlite.db")
+    create_connection("../db/airbnb-sqlite.db")

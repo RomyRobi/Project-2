@@ -42,6 +42,10 @@ Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
 NYC = Base.classes.nyc
+<<<<<<< HEAD
+=======
+nyc_hist = Base.classes.nyc_hist
+>>>>>>> mattcole
 
 
 @app.route("/")
@@ -50,9 +54,15 @@ def index():
     return render_template("index.html")
 
 
+<<<<<<< HEAD
 @app.route("/api/metadata")
 def names():
     """Return categoeries of metadata."""
+=======
+@app.route("/api/nyc/metadata")
+def listings_names():
+    """Return listings metadata."""
+>>>>>>> mattcole
 
     # Use Pandas to perform the sql query
     stmt = db.session.query(NYC).statement
@@ -61,6 +71,20 @@ def names():
     # Return a list of the column names (sample names)
     return jsonify(list(df.columns)[2:])
 
+<<<<<<< HEAD
+=======
+@app.route("/api/nyc_hist/metadata")
+def historical_names():
+    """Return historical metadata."""
+
+    # Use Pandas to perform the sql query
+    stmt = db.session.query(nyc_hist).statement
+    df = pd.read_sql_query(stmt, db.session.bind)
+
+    # Return a list of the column names (sample names)
+    return jsonify(list(df.columns)[2:])
+
+>>>>>>> mattcole
 
 @app.route("/metadata/<sample>")
 def sample_metadata(sample):
