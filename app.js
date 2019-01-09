@@ -14,7 +14,6 @@ var boroughs = [
   'Staten Island',
 ]
 
-
 // Set up chart
 var ctx = document.getElementById('polar-chart-area');
 var chartColors = window.chartColors;
@@ -33,7 +32,8 @@ var chartOptions = {
   },
   title: {
     display: true,
-    text: 'Choose a Category to View'
+    text: 'Choose a Category to View',
+    fontSize: 30
   },
   scale: {
     ticks: {
@@ -73,7 +73,7 @@ const csv = "listings.csv"
 
 d3.csv(csv, function(listingsData) {
 
-  // Code for abridging data. Only NAN returned for unknown reason
+  //// Code for abridging data. Only NAN returned for unknown reason
   // var polarData = [];
   // var currData ={};
   //
@@ -100,8 +100,6 @@ d3.csv(csv, function(listingsData) {
     data.review_scores_rating = +data.review_scores_rating;
     data.review_scores_location = +data.review_scores_location;
   });
-
-  console.log(listingsData);
 
   // Event Listener for "Listings"
   document.getElementById('listingsCount').addEventListener('click', function() {
