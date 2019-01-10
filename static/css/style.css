@@ -24,7 +24,7 @@
   font-weight: 300;
   color: #FF5A60;
   padding-top: 40px;
-  padding-left: 10%;
+  padding-left: 140px;
 }
 
 .main {
@@ -42,20 +42,27 @@
 }
 
 .graphs {
-  padding: 10px;
+  padding: 30px 20px 40px 20px;
   background-color: white;
-  border-style: solid;
-  border-width: thin;
-  border-color: darkgray;
-  border-radius: 15px;
+  /* border-style: solid; */
+  /* border-width: thin; */
+  /* border-color: darkgray; */
+  border-radius: 10px;
+  box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.07);
+}
+
+.graph-chart {
+  padding-top: 10px;
 }
 
 .rightcol {
   background-color: white;
-  border-style: solid;
-  border-width: thin;
-  border-color: darkgray;
-  border-radius: 15px;
+  /* border-style: solid; */
+  /* border-width: thin; */
+  /* border-color: darkgray; */
+  box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  padding: 5px 10px;
   position: fixed;
   width: auto;
 }
