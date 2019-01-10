@@ -65,7 +65,7 @@
   padding: 5px 10px;
   position: fixed;
   width: min-content;
-  height: 100%;
+  height: min-content;
 }
 
 #map {
