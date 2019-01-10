@@ -104,8 +104,10 @@
 #map,
 body,
 html {
-  height: auto;
+  height: 100%;
   width: auto;
+  margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .leaflet-popup-content {
