@@ -64,7 +64,8 @@
   border-radius: 8px;
   padding: 5px 10px;
   position: fixed;
-  width: 100%;
+  width: min-content;
+  height: 100%;
 }
 
 #map {
