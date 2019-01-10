@@ -13,7 +13,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 }).addTo(myMap);
 
 // Link to GeoJSON
-  var filepath = "../../python scripts/neighborhoods_price.geojson"
+  var filepath = "static/neighborhoods_price.geojson"
   //var xhr = new XMLHttpRequest();
   //xhr.onreadystatechange = handleStateChange; // Implemented elsewhere.
   //xhr.open("GET", chrome.extension.getURL(filepath), true);
