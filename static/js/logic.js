@@ -22,7 +22,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
   var geojson;
 
 // Grab data with d3
-d3.json(filepath, function(data) {
+d3.json(filepath).then(function(data) {
 
   // Create a new choropleth layer
   geojson = L.choropleth(data, {
