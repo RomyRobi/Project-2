@@ -63,15 +63,15 @@ def listings_names():
 
 
     # Use Pandas to perform the sql query
-<<<<<<< HEAD
+
     # stmt = db.session.query(NYC).statement
     # df = pd.read_sql_query(stmt, db.session.bind)
-=======
+
     stmt = db.session.query(nyc).statement
     df = pd.read_sql_query(stmt, db.session.bind)
->>>>>>> mattcole
 
-    # Return a list of the column names (sample names)
+
+    # Return a list of the column names (sample names)s
     # return jsonify(list(df.columns)[2:])
     # results =db.session.query()
 
