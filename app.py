@@ -52,11 +52,6 @@ def index():
     return render_template("index.html")
 
 
-
-@app.route("/api/metadata")
-def names():
-    """Return categories of metadata."""
-
 @app.route("/api/nyc/metadata")
 def listings_names():
     """Return listings metadata."""
@@ -72,10 +67,10 @@ def listings_names():
 
 
     # Return a list of the column names (sample names)s
-    # return jsonify(list(df.columns)[2:])
+    return jsonify(list(df.columns)[2:])
     # results =db.session.query()
 
-    return jsonify(list(NYC.columns))
+    # return jsonify(list(NYC.columns))
 
 
 @app.route("/api/nyc_hist/metadata")
