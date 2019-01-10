@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
@@ -35,4 +36,182 @@
     <script type="text/javascript" src="static/js/logic.js"></script>
 
   </body>
+=======
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>XPLORbnb</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.js"></script>
+	<script src="static/js/utils.js"></script>
+  <style>
+    canvas {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="container-fluid" style="padding: 0;">
+    <div class="row">
+      <div class="col-lg-12">
+        <nav class="navbar navbar-dark" style="background-color: #FF5A60;">
+          <span class="navbar-brand header-logo">
+            XPLORbnb
+          </span>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="location-bar">
+          <h1 class="city">New York</h1>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="main">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 leftcol">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <div class="graphs">
+                <div id="avgDailyRate">
+                  	<div id="canvas-holder">
+                  		<canvas id="polar-chart-area"></canvas>
+                  	</div>
+                  	<button id="listingsCount">Listings</button>
+                  	<button id="avgPrice">Prices</button>
+                  	<button id="avgAccomodations">Guests Accommodated</button>
+                  	<button id="avgMinNights">Minimum Stay</button>
+                  	<button id="avgScore">Review Scores</button>
+                  	<button id="avgLocScore">Location Scores</button>
+                  <!-- append avgDailyRate graph here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top: 20px;">
+            <div class="col-md-12 text-center">
+              <div class="graphs">
+                <div id="rentalType">
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  <!-- append rentalType graph here -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" style="padding-top: 20px;">
+            <div class="col-md-12 text-center">
+              <div class="graphs">
+                <div id="rentalSize">
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  test
+                  <br>
+                  <!-- append rentalSize graph here -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="rightcol">
+            <div id="map">
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+              test
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="side-menu" style="border-color: black; border-width: thin;">
+    <div class="d-flex flex-column">
+      <div class="p-3">
+        <h1 class="text-center" style="font-size: 18px; color: darkgray;">The Team!</h1>
+      </div>
+      <div class="p-3">
+        <div>
+          <img src="images/adam.jpeg" class="img-fluid rounded-circle" alt="Adam DeBruler">
+        </div>
+      </div>
+      <div class="p-3">
+        <div>
+          <img src="images/meghana.jpg" class="img-fluid rounded-circle" alt="Meghana Bhimasani">
+        </div>
+      </div>
+      <div class="p-3">
+        <div>
+          <img src="images/romy.jpeg" class="img-fluid rounded-circle" alt="Romy Robillard">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="footer">
+    <br>
+  </div>
+
+
+  <!-- bootstrap 4 and d3 js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+	<script type="text/javascript" src='static/js/app.js'></script>
+</body>
+>>>>>>> master
 </html>
