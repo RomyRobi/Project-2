@@ -1,10 +1,13 @@
 function statAverage(data, category){
-
   total = 0;
+  currlen = 0;
   data.forEach(entry => {
-    total += entry[category];
+    if (entry[category] != ''){
+      total += parseInt(entry[category]);
+      currlen += 1;
+    }
   });
-  return total/data.length;
+  return total/currlen;
 }
 
 var boroughs = [
@@ -82,6 +85,7 @@ d3.json(url).then(function(listingsJSON) {
     currData.neighbourhood_group_cleansed = listingsJSON[data].neighbourhood_group_cleansed;
     currData.accommodates = listingsJSON[data].accommodates;
     currData.price = listingsJSON[data].price;
+    currData.minimum_nights = listingsJSON[data].minimum_nights;
     currData.review_scores_rating = listingsJSON[data].review_scores_rating;
     currData.review_scores_location = listingsJSON[data].review_scores_location;
     listingsData.push(currData);
