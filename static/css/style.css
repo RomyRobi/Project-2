@@ -1,3 +1,7 @@
+body {
+  overflow-x: hidden;
+}
+
 .header {
   width: 100%;
   color: white;
@@ -61,18 +65,26 @@
   /* border-width: thin; */
   /* border-color: darkgray; */
   box-shadow: 0px 3px 20px 0px rgba(0,0,0,0.07);
-  border-radius: 8px;
-  padding: 5px 10px;
+  border-radius: 10px;
+  /* padding: 5px 10px; */
   position: fixed;
-  width: 100%;
-  height: 100%;
+  right: 10px;
+  width: 59%;
+  height: 80vh;
 }
 
 #map {
   position: relative;
+<<<<<<< HEAD
   padding: 10px;
+=======
+  height: inherit;
+  /* padding: 10px; */
+>>>>>>> master
   overflow: hidden;
+  width: 100% !important;
 }
+
 .side-menu {
   position: fixed;
   top: 72px;
@@ -102,7 +114,6 @@
   margin: 0;
 }
 
-#map,
 body,
 html {
   position: relative;
@@ -148,5 +159,17 @@ html {
   float: right;
 }
 
+
 h1 {
   text-align: center;
+}
+
+.axis {
+  font: 12px sans-serif;
+}
+
+.line {
+  fill: none;
+  stroke: #FF5A60;
+  stroke-width: 2px;
+}

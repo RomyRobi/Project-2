@@ -1,10 +1,13 @@
 function statAverage(data, category){
-
   total = 0;
+  currlen = 0;
   data.forEach(entry => {
-    total += entry[category];
+    if (entry[category] != ''){
+      total += parseInt(entry[category]);
+      currlen += 1;
+    }
   });
-  return total/data.length;
+  return +((total/currlen).toFixed(2));
 }
 
 var boroughs = [
@@ -15,8 +18,16 @@ var boroughs = [
   'Staten Island',
 ]
 
-// Set up chart
-var ctx = document.getElementById('polar-chart-area');
+var yearsStr = [
+  '2014',
+  '2015',
+  '2016',
+  '2017',
+  '2018'
+]
+
+// Set up polar chart
+var polarctx = document.getElementById('polar-chart-area');
 var chartColors = window.chartColors;
 var color = Chart.helpers.color;
 var backgroundColors = [
@@ -26,14 +37,14 @@ var backgroundColors = [
   color(chartColors.green).alpha(0.5).rgbString(),
   color(chartColors.blue).alpha(0.5).rgbString(),
 ];
-var chartOptions = {
+var polarChartOptions = {
   responsive: true,
   legend: {
     position: 'right',
   },
   title: {
     display: true,
-    text: 'Choose a Category to View',
+    text: 'Loading...',
     fontSize: 20
   },
   scale: {
@@ -48,7 +59,7 @@ var chartOptions = {
   }
 };
 
-var config = {
+var polarConfig = {
   type: 'polarArea',
   data: {
     datasets: [{
@@ -64,43 +75,105 @@ var config = {
     }],
     labels: boroughs
   },
-  options: chartOptions
+  options: polarChartOptions
 };
 
-var myChart = new Chart(ctx, config);
+var polarChart = new Chart(polarctx, polarConfig);
+
+
+// Initialize linechart pre-load
+var lineChartData = {
+      labels: yearsStr,
+      datasets: [{
+        label: 'Number of Listings',
+        borderColor: window.chartColors.red,
+        backgroundColor: window.chartColors.red,
+        fill: false,
+        data: [100, 75, 50, 25, 0],
+        yAxisID: 'y-axis-1',
+      }, {
+        label: 'Average Price',
+        borderColor: window.chartColors.blue,
+        backgroundColor: window.chartColors.blue,
+        fill: false,
+        data: [0, 25, 50, 75, 100],
+        yAxisID: 'y-axis-2'
+      }]
+    };
+
+
+    var linectx = document.getElementById('line-chart-area').getContext('2d');
+    lineConfig = {
+      type: 'line',
+      data: lineChartData,
+      options: {
+        responsive: true,
+        hoverMode: 'index',
+        stacked: false,
+        title: {
+          display: true,
+          text: 'Loading...',
+          fontSize: 20
+        },
+        scales: {
+          yAxes: [{
+            type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            display: true,
+            position: 'left',
+            id: 'y-axis-1',
+            scaleLabel:{
+              display: true,
+              labelString: '# of Listings'
+            }
+          }, {
+            type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+            display: true,
+            position: 'right',
+            id: 'y-axis-2',
+            scaleLabel:{
+              display: true,
+              labelString: 'Average Price'
+            },
+
+            // grid line settings
+            gridLines: {
+              drawOnChartArea: false, // only want the grid lines for one axis to show up
+            },
+          }],
+        }
+      }
+    };
+
+    var lineChart = new Chart(linectx, lineConfig);
 
 
 // const csv = "static/listings.csv"
 var url = '/listings_data';
-d3.json(url).then(function(listingsJSON) {
-  console.log(listingsJSON);
-  //// Code for abridging data. Only NAN returned for unknown reason
-  var listingsData = [];
-  var currData ={};
+var histcsv = '/static/all_historical_data.csv'
 
-  Object.keys(listingsJSON).forEach(function(data) {
-    currData.neighbourhood_group_cleansed = listingsJSON[data].neighbourhood_group_cleansed;
-    currData.accommodates = listingsJSON[data].accommodates;
-    currData.price = listingsJSON[data].price;
-    currData.review_scores_rating = listingsJSON[data].review_scores_rating;
-    currData.review_scores_location = listingsJSON[data].review_scores_location;
-    // console.log(currData);
+console.log('Starting to read JSON');
+
+Promise.all([
+  d3.json(url),
+  d3.csv(histcsv)
+]).then(function(listingsJSON) {
+  var listingsData = [];
+
+  // Store relevant data for polar chart
+  Object.keys(listingsJSON[0]).forEach(function(data) {
+    var currData ={};
+    currData.neighbourhood_group_cleansed = listingsJSON[0][data].neighbourhood_group_cleansed;
+    currData.accommodates = listingsJSON[0][data].accommodates;
+    currData.price = listingsJSON[0][data].price;
+    currData.minimum_nights = listingsJSON[0][data].minimum_nights;
+    currData.review_scores_rating = listingsJSON[0][data].review_scores_rating;
+    currData.review_scores_location = listingsJSON[0][data].review_scores_location;
     listingsData.push(currData);
-    // console.log(listingsData[listingsData.length -1])
   });
 
-  console.log(listingsData);
-
-  // parse data
-  // Object.keys(listingsData).forEach(function(data) {
-  //   console.log(data);
-  //   data.neighbourhood_group_cleansed = data.neighbourhood_group_cleansed;
-  //   data.accommodates = +data.accommodates;
-  //   data.price = parseFloat(data.price.replace(/[^0-9-.]/g, ''));
-  //   data.minimum_nights = +data.minimum_nights;
-  //   data.review_scores_rating = +data.review_scores_rating;
-  //   data.review_scores_location = +data.review_scores_location;
-  // });
+  // Remove "Loading..." from polar chart
+  polarConfig.options.title.text = 'Choose a Category to View';
+  polarChart.update();
 
   // Event Listener for "Listings"
   document.getElementById('listingsCount').addEventListener('click', function() {
@@ -110,9 +183,9 @@ d3.json(url).then(function(listingsJSON) {
       boroughCount = boroughData.length;
       listingsCounts.push(boroughCount);
     });
-    config.data.datasets[0].data = listingsCounts;
-    config.options.title.text = 'Number of Listings by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsCounts;
+    polarConfig.options.title.text = 'Number of Listings by Borough'
+    polarChart.update();
   });
 
   // Event Listener for "Prices"
@@ -123,9 +196,9 @@ d3.json(url).then(function(listingsJSON) {
       boroughAvg = statAverage(boroughData, 'price');
       listingsAvg.push(boroughAvg);
     });
-    config.data.datasets[0].data = listingsAvg;
-    config.options.title.text = 'Avg Listing Price ($) by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsAvg;
+    polarConfig.options.title.text = 'Avg Listing Price ($) by Borough'
+    polarChart.update();
   });
 
   // Event Listener for "Review Scores"
@@ -136,9 +209,9 @@ d3.json(url).then(function(listingsJSON) {
       boroughAvg = statAverage(boroughData, 'review_scores_rating');
       listingsAvg.push(boroughAvg);
     });
-    config.data.datasets[0].data = listingsAvg;
-    config.options.title.text = 'Avg Review Score by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsAvg;
+    polarConfig.options.title.text = 'Avg Review Score by Borough'
+    polarChart.update();
   });
 
   // Event Listener for "Location Scores"
@@ -149,9 +222,9 @@ d3.json(url).then(function(listingsJSON) {
       boroughAvg = statAverage(boroughData, 'review_scores_location');
       listingsAvg.push(boroughAvg);
     });
-    config.data.datasets[0].data = listingsAvg;
-    config.options.title.text = 'Avg Location Score by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsAvg;
+    polarConfig.options.title.text = 'Avg Location Score by Borough'
+    polarChart.update();
   });
 
   // Event Listener for "Guests Accommodated"
@@ -162,9 +235,9 @@ d3.json(url).then(function(listingsJSON) {
       boroughAvg = statAverage(boroughData, 'accommodates');
       listingsAvg.push(boroughAvg);
     });
-    config.data.datasets[0].data = listingsAvg;
-    config.options.title.text = 'Avg Guests Accommodated by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsAvg;
+    polarConfig.options.title.text = 'Avg Guests Accommodated by Borough'
+    polarChart.update();
   });
 
   // Event Listener for "Minimum Nights"
@@ -175,9 +248,82 @@ d3.json(url).then(function(listingsJSON) {
       boroughAvg = statAverage(boroughData, 'minimum_nights');
       listingsAvg.push(boroughAvg);
     });
-    config.data.datasets[0].data = listingsAvg;
-    config.options.title.text = 'Avg Minimum Stay by Borough'
-    myChart.update();
+    polarConfig.data.datasets[0].data = listingsAvg;
+    polarConfig.options.title.text = 'Avg Minimum Stay by Borough'
+    polarChart.update();
   });
+
+  // Store data for line chart
+  var histCount = [];
+  var histPrice = [];
+
+  yearsStr.forEach(year => {
+    yearData = listingsJSON[1].filter(listing => listing.Date == year);
+    histCount.push(yearData.length);
+    yearPrice = statAverage(yearData, 'Price');
+    histPrice.push(yearPrice);
+  });
+
+  var lineChartData = {
+  			labels: yearsStr,
+  			datasets: [{
+  				label: 'Number of Listings',
+  				borderColor: window.chartColors.red,
+  				backgroundColor: window.chartColors.red,
+  				fill: false,
+  				data: histCount,
+  				yAxisID: 'y-axis-1',
+  			}, {
+  				label: 'Average Price',
+  				borderColor: window.chartColors.blue,
+  				backgroundColor: window.chartColors.blue,
+  				fill: false,
+  				data: histPrice,
+  				yAxisID: 'y-axis-2'
+  			}]
+  		};
+
+    lineChartData.datasets[0].data = histCount;
+    lineChartData.datasets[1].data = histPrice;
+    lineConfig.options.title.text = 'Overall Trends';
+    lineConfig.data = lineChartData;
+    lineChart.update();
+
+    // console.log('loading graph')
+    // var linectx = document.getElementById('line-chart-area').getContext('2d');
+    // lineConfig = {
+    //   type: 'line',
+    //   data: lineChartData,
+    //   options: {
+    //     responsive: true,
+    //     hoverMode: 'index',
+    //     stacked: false,
+    //     title: {
+    //       display: true,
+    //       text: 'Overall Trends',
+    //       fontSize: 20
+    //     },
+    //     scales: {
+    //       yAxes: [{
+    //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+    //         display: true,
+    //         position: 'left',
+    //         id: 'y-axis-1',
+    //       }, {
+    //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
+    //         display: true,
+    //         position: 'right',
+    //         id: 'y-axis-2',
+    //
+    //         // grid line settings
+    //         gridLines: {
+    //           drawOnChartArea: false, // only want the grid lines for one axis to show up
+    //         },
+    //       }],
+    //     }
+    //   }
+    // };
+    //
+    // var lineChart = new Chart(linectx, lineConfig);
 
 });
