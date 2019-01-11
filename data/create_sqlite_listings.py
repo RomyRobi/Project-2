@@ -11,7 +11,7 @@ def create_connection(db_file):
         cur.execute("CREATE TABLE nyc (id INTEGER PRIMARY KEY,listing_url TEXT,name TEXT, host_id INTEGER,\
                     neighbourhood_cleansed TEXT, neighbourhood_group_cleansed TEXT,\
                     city TEXT, latitude TEXT,longitude TEXT, property_type TEXT, room_type TEXT, accommodates TEXT, \
-                    price INTEGER, number_of_reviews INTEGER, first_review TEXT,review_scores_rating TEXT , review_scores_location );")
+                    price INTEGER, number_of_reviews INTEGER, first_review TEXT,review_scores_rating TEXT , review_scores_location TEXT, minimum_nights INTEGER );")
         csvfile = "listings.csv"
         df = pd.read_csv(csvfile, keep_default_na = False)
         print(df.head(10))
