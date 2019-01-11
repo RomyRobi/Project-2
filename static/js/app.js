@@ -73,34 +73,19 @@ var myChart = new Chart(ctx, config);
 // const csv = "static/listings.csv"
 var url = '/listings_data';
 d3.json(url).then(function(listingsJSON) {
-  console.log(listingsJSON);
+  // console.log(listingsJSON);
   //// Code for abridging data. Only NAN returned for unknown reason
   var listingsData = [];
-  var currData ={};
 
   Object.keys(listingsJSON).forEach(function(data) {
+    var currData ={};
     currData.neighbourhood_group_cleansed = listingsJSON[data].neighbourhood_group_cleansed;
     currData.accommodates = listingsJSON[data].accommodates;
     currData.price = listingsJSON[data].price;
     currData.review_scores_rating = listingsJSON[data].review_scores_rating;
     currData.review_scores_location = listingsJSON[data].review_scores_location;
-    // console.log(currData);
     listingsData.push(currData);
-    // console.log(listingsData[listingsData.length -1])
   });
-
-  console.log(listingsData);
-
-  // parse data
-  // Object.keys(listingsData).forEach(function(data) {
-  //   console.log(data);
-  //   data.neighbourhood_group_cleansed = data.neighbourhood_group_cleansed;
-  //   data.accommodates = +data.accommodates;
-  //   data.price = parseFloat(data.price.replace(/[^0-9-.]/g, ''));
-  //   data.minimum_nights = +data.minimum_nights;
-  //   data.review_scores_rating = +data.review_scores_rating;
-  //   data.review_scores_location = +data.review_scores_location;
-  // });
 
   // Event Listener for "Listings"
   document.getElementById('listingsCount').addEventListener('click', function() {
