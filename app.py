@@ -42,7 +42,7 @@ Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
 nyc = Base.classes.nyc
-#nyc_hist = Base.classes.nyc_hist
+# nyc_hist = Base.classes.nyc_hist
 
 
 
@@ -73,17 +73,17 @@ def listings_names():
     # return jsonify(list(NYC.columns))
 
 
-#@app.route("/api/nyc_hist/metadata")
-#def historical_names():
-    #"""Return historical metadata."""
-
-    # Use Pandas to perform the sql query
-    #stmt = db.session.query(nyc_hist).statement
-    #df = pd.read_sql_query(stmt, db.session.bind)
-
-    # Return a list of the column names (sample names)
-    #return jsonify(list(df.columns)[2:])
-
+# @app.route("/api/nyc_hist/metadata")
+# def historical_names():
+#     """Return historical metadata."""
+#
+#     # Use Pandas to perform the sql query
+#     stmt = db.session.query(nyc_hist).statement
+#     df = pd.read_sql_query(stmt, db.session.bind)
+#
+#     # Return a list of the column names (sample names)
+#     return jsonify(list(df.columns)[2:])
+#
 
 
 @app.route("/listings_data")
@@ -116,17 +116,17 @@ def listings_data():
 
     return jsonify(data)
 
-@app.route("/historic_data")
-def historic_data():
-    """Return the Data from the nyc table (historic.csv)."""
-
-    stmt = db.session.query(nyc_hist).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
-
-    data = df.to_dict(orient='index')
-
-    return jsonify(data)
-
+# @app.route("/historic_data")
+# def historic_data():
+#     """Return the Data from the nyc table (historic.csv)."""
+#
+#     stmt = db.session.query(nyc_hist).statement
+#     df = pd.read_sql_query(stmt, db.session.bind)
+#
+#     data = df.to_dict(orient='index')
+#
+#     return jsonify(data)
+#
 
 
 
