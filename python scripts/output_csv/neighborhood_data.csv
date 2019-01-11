@@ -1,0 +1,1140 @@
+Borough,Neighborhood,Date,Price
+Bronx,Allerton,2014,68.82608695652173
+Bronx,Allerton,2015,69.58252427184466
+Bronx,Allerton,2016,64.5
+Bronx,Allerton,2017,66.33557046979865
+Bronx,Allerton,2018,89.28947368421052
+Bronx,Baychester,2016,85.80952380952381
+Bronx,Baychester,2017,59.36363636363637
+Bronx,Baychester,2018,71.16666666666667
+Bronx,Belmont,2015,55.483870967741936
+Bronx,Belmont,2016,77.45918367346938
+Bronx,Belmont,2017,71.5
+Bronx,Belmont,2018,70.69565217391305
+Bronx,Bronx Park,2014,44.75
+Bronx,Bronx Park,2015,40.72727272727273
+Bronx,Bronx Park,2016,73.4375
+Bronx,Bronx Park,2017,187.42857142857142
+Bronx,Bronxdale,2014,91.2
+Bronx,Bronxdale,2015,146.1081081081081
+Bronx,Bronxdale,2016,71.23308270676692
+Bronx,Bronxdale,2017,68.55913978494624
+Bronx,Bronxdale,2018,61.10526315789474
+Bronx,Castle Hill,2014,57.0
+Bronx,Castle Hill,2015,66.0
+Bronx,Castle Hill,2016,85.0
+Bronx,Castle Hill,2017,80.33333333333333
+Bronx,Castle Hill,2018,65.5
+Bronx,City Island,2014,121.57142857142857
+Bronx,City Island,2015,126.98181818181818
+Bronx,City Island,2016,120.95
+Bronx,City Island,2017,130.49122807017545
+Bronx,City Island,2018,107.46153846153847
+Bronx,Claremont Village,2014,62.56521739130435
+Bronx,Claremont Village,2015,57.11538461538461
+Bronx,Claremont Village,2016,70.00943396226415
+Bronx,Claremont Village,2017,60.16901408450704
+Bronx,Claremont Village,2018,65.38888888888889
+Bronx,Clason Point,2014,84.42105263157895
+Bronx,Clason Point,2015,96.05882352941177
+Bronx,Clason Point,2016,91.98445595854922
+Bronx,Clason Point,2017,66.0448717948718
+Bronx,Clason Point,2018,97.73684210526316
+Bronx,Co-op City,2014,93.5625
+Bronx,Co-op City,2015,101.66666666666667
+Bronx,Co-op City,2016,92.74074074074075
+Bronx,Co-op City,2017,117.8529411764706
+Bronx,Co-op City,2018,70.0
+Bronx,Concourse,2014,102.34693877551021
+Bronx,Concourse,2015,86.9921875
+Bronx,Concourse,2016,86.531328320802
+Bronx,Concourse,2017,85.00696864111498
+Bronx,Concourse,2018,89.12280701754386
+Bronx,Concourse Village,2014,95.5813953488372
+Bronx,Concourse Village,2015,142.4695652173913
+Bronx,Concourse Village,2016,78.43793103448276
+Bronx,Concourse Village,2017,75.63687150837988
+Bronx,Concourse Village,2018,75.13793103448276
+Bronx,Country Club,2014,103.5
+Bronx,Country Club,2015,96.71428571428571
+Bronx,Country Club,2016,94.83333333333333
+Bronx,Country Club,2017,99.0
+Bronx,Crotona Park,2016,82.85714285714286
+Bronx,Crotona Park,2017,100.0
+Bronx,East Morrisania,2014,93.0
+Bronx,East Morrisania,2015,111.3076923076923
+Bronx,East Morrisania,2016,85.0
+Bronx,East Morrisania,2017,70.92105263157895
+Bronx,East Morrisania,2018,62.714285714285715
+Bronx,Eastchester,2014,70.375
+Bronx,Eastchester,2015,119.27272727272727
+Bronx,Eastchester,2016,77.27551020408163
+Bronx,Eastchester,2017,75.03260869565217
+Bronx,Eastchester,2018,137.30769230769232
+Bronx,Edenwald,2014,168.75
+Bronx,Edenwald,2015,95.75
+Bronx,Edenwald,2016,91.65306122448979
+Bronx,Edenwald,2017,69.61538461538461
+Bronx,Edenwald,2018,81.22222222222223
+Bronx,Fieldston,2014,97.76923076923077
+Bronx,Fieldston,2015,779.7647058823529
+Bronx,Fieldston,2016,93.1891891891892
+Bronx,Fieldston,2017,74.6125
+Bronx,Fieldston,2018,77.33333333333333
+Bronx,Fordham,2014,72.05
+Bronx,Fordham,2015,78.33333333333333
+Bronx,Fordham,2016,66.6606334841629
+Bronx,Fordham,2017,63.464516129032255
+Bronx,Fordham,2018,63.91428571428571
+Bronx,Highbridge,2014,90.125
+Bronx,Highbridge,2015,60.28125
+Bronx,Highbridge,2016,65.075
+Bronx,Highbridge,2017,60.906976744186046
+Bronx,Highbridge,2018,70.66666666666667
+Bronx,Hunts Point,2015,54.285714285714285
+Bronx,Hunts Point,2016,53.92857142857143
+Bronx,Hunts Point,2017,44.833333333333336
+Bronx,Hunts Point,2018,48.53846153846154
+Bronx,Kingsbridge,2014,97.93333333333334
+Bronx,Kingsbridge,2015,80.953216374269
+Bronx,Kingsbridge,2016,81.76885644768856
+Bronx,Kingsbridge,2017,79.4983606557377
+Bronx,Kingsbridge,2018,80.75862068965517
+Bronx,Longwood,2014,109.07894736842105
+Bronx,Longwood,2015,117.37404580152672
+Bronx,Longwood,2016,108.62089552238805
+Bronx,Longwood,2017,83.09417040358744
+Bronx,Longwood,2018,86.9423076923077
+Bronx,Melrose,2014,68.71428571428571
+Bronx,Melrose,2015,76.125
+Bronx,Melrose,2016,86.11940298507463
+Bronx,Melrose,2017,83.62962962962963
+Bronx,Melrose,2018,65.6
+Bronx,Morris Heights,2014,73.0
+Bronx,Morris Heights,2015,42.76315789473684
+Bronx,Morris Heights,2016,43.91549295774648
+Bronx,Morris Heights,2017,45.97872340425532
+Bronx,Morris Heights,2018,71.52631578947368
+Bronx,Morris Park,2014,119.0
+Bronx,Morris Park,2015,57.906976744186046
+Bronx,Morris Park,2016,81.35849056603773
+Bronx,Morris Park,2017,51.4375
+Bronx,Morris Park,2018,72.0
+Bronx,Morrisania,2014,38.666666666666664
+Bronx,Morrisania,2015,66.45833333333333
+Bronx,Morrisania,2016,79.68235294117648
+Bronx,Morrisania,2017,73.73584905660377
+Bronx,Morrisania,2018,84.13333333333334
+Bronx,Mott Haven,2014,88.953125
+Bronx,Mott Haven,2015,91.83756345177665
+Bronx,Mott Haven,2016,77.44827586206897
+Bronx,Mott Haven,2017,71.32058823529412
+Bronx,Mott Haven,2018,98.18867924528301
+Bronx,Mount Eden,2014,48.0
+Bronx,Mount Eden,2015,64.66666666666667
+Bronx,Mount Eden,2016,48.266666666666666
+Bronx,Mount Eden,2017,50.627906976744185
+Bronx,Mount Eden,2018,63.125
+Bronx,Mount Hope,2014,81.11627906976744
+Bronx,Mount Hope,2015,81.5
+Bronx,Mount Hope,2016,99.35714285714286
+Bronx,Mount Hope,2017,84.953125
+Bronx,Mount Hope,2018,82.0
+Bronx,North Riverdale,2014,177.25
+Bronx,North Riverdale,2015,128.0
+Bronx,North Riverdale,2016,81.5079365079365
+Bronx,North Riverdale,2017,109.625
+Bronx,North Riverdale,2018,88.0
+Bronx,Norwood,2014,83.96153846153847
+Bronx,Norwood,2015,85.54918032786885
+Bronx,Norwood,2016,70.96685082872928
+Bronx,Norwood,2017,67.14009661835749
+Bronx,Norwood,2018,71.05714285714286
+Bronx,Olinville,2014,58.0
+Bronx,Olinville,2015,64.2
+Bronx,Olinville,2016,85.125
+Bronx,Olinville,2017,94.64285714285714
+Bronx,Olinville,2018,77.66666666666667
+Bronx,Parkchester,2014,90.95652173913044
+Bronx,Parkchester,2015,91.71111111111111
+Bronx,Parkchester,2016,85.16991643454038
+Bronx,Parkchester,2017,73.35071090047393
+Bronx,Parkchester,2018,64.43333333333334
+Bronx,Pelham Bay,2014,88.66666666666667
+Bronx,Pelham Bay,2015,71.875
+Bronx,Pelham Bay,2016,61.77477477477478
+Bronx,Pelham Bay,2017,74.52054794520548
+Bronx,Pelham Bay,2018,114.07692307692308
+Bronx,Pelham Bay Park,2015,30.0
+Bronx,Pelham Bay Park,2016,46.5
+Bronx,Pelham Bay Park,2017,995.0
+Bronx,Pelham Gardens,2014,75.46666666666667
+Bronx,Pelham Gardens,2015,91.09756097560975
+Bronx,Pelham Gardens,2016,66.20792079207921
+Bronx,Pelham Gardens,2017,69.86075949367088
+Bronx,Pelham Gardens,2018,91.04
+Bronx,Port Morris,2014,139.45945945945945
+Bronx,Port Morris,2015,98.10377358490567
+Bronx,Port Morris,2016,90.50632911392405
+Bronx,Port Morris,2017,86.75496688741723
+Bronx,Port Morris,2018,70.95238095238095
+Bronx,Riverdale,2014,144.0
+Bronx,Riverdale,2015,109.46296296296296
+Bronx,Riverdale,2016,92.15189873417721
+Bronx,Riverdale,2017,91.15555555555555
+Bronx,Riverdale,2018,401.84615384615387
+Bronx,Schuylerville,2015,103.33333333333333
+Bronx,Schuylerville,2016,69.96296296296296
+Bronx,Schuylerville,2017,41.34285714285714
+Bronx,Schuylerville,2018,54.57142857142857
+Bronx,Soundview,2014,47.42857142857143
+Bronx,Soundview,2015,47.3125
+Bronx,Soundview,2016,45.21739130434783
+Bronx,Soundview,2017,41.0
+Bronx,Soundview,2018,45.4
+Bronx,Spuyten Duyvil,2014,123.5
+Bronx,Spuyten Duyvil,2015,264.4
+Bronx,Spuyten Duyvil,2016,137.37853107344634
+Bronx,Spuyten Duyvil,2017,134.1011235955056
+Bronx,Spuyten Duyvil,2018,72.8
+Bronx,Throgs Neck,2014,128.0
+Bronx,Throgs Neck,2015,110.55555555555556
+Bronx,Throgs Neck,2016,112.9090909090909
+Bronx,Throgs Neck,2017,97.23404255319149
+Bronx,Throgs Neck,2018,106.76923076923077
+Bronx,Tremont,2014,47.75
+Bronx,Tremont,2015,61.82142857142857
+Bronx,Tremont,2016,58.609375
+Bronx,Tremont,2017,54.45945945945946
+Bronx,Tremont,2018,53.9
+Bronx,Unionport,2014,88.0
+Bronx,Unionport,2015,71.36363636363636
+Bronx,Unionport,2016,69.28571428571429
+Bronx,Unionport,2017,70.6
+Bronx,Unionport,2018,104.85714285714286
+Bronx,University Heights,2014,78.82352941176471
+Bronx,University Heights,2015,84.97142857142858
+Bronx,University Heights,2016,66.64285714285714
+Bronx,University Heights,2017,57.06140350877193
+Bronx,University Heights,2018,69.08695652173913
+Bronx,Van Cortlandt Park,2014,117.42857142857143
+Bronx,Van Cortlandt Park,2015,125.07142857142857
+Bronx,Van Cortlandt Park,2016,65.25714285714285
+Bronx,Van Cortlandt Park,2017,75.35714285714286
+Bronx,Van Nest,2014,75.7
+Bronx,Van Nest,2015,56.86363636363637
+Bronx,Van Nest,2016,83.10344827586206
+Bronx,Van Nest,2017,170.39344262295083
+Bronx,Van Nest,2018,104.14285714285714
+Bronx,Wakefield,2014,124.0
+Bronx,Wakefield,2015,121.79069767441861
+Bronx,Wakefield,2016,108.0989010989011
+Bronx,Wakefield,2017,99.38775510204081
+Bronx,Wakefield,2018,79.15625
+Bronx,West Farms,2015,68.66666666666667
+Bronx,West Farms,2016,68.44680851063829
+Bronx,West Farms,2017,150.43589743589743
+Bronx,West Farms,2018,64.75
+Bronx,Westchester Square,2014,95.56521739130434
+Bronx,Westchester Square,2015,98.77941176470588
+Bronx,Westchester Square,2016,145.84
+Bronx,Westchester Square,2017,165.53333333333333
+Bronx,Westchester Square,2018,190.75
+Bronx,Williamsbridge,2014,90.57142857142857
+Bronx,Williamsbridge,2015,75.42682926829268
+Bronx,Williamsbridge,2016,74.7591836734694
+Bronx,Williamsbridge,2017,70.30357142857143
+Bronx,Williamsbridge,2018,89.3030303030303
+Bronx,Woodlawn,2014,139.66666666666666
+Bronx,Woodlawn,2015,96.46153846153847
+Bronx,Woodlawn,2016,69.87692307692308
+Bronx,Woodlawn,2017,68.81818181818181
+Bronx,Woodlawn,2018,58.125
+Brooklyn,Bath Beach,2016,74.77777777777777
+Brooklyn,Bath Beach,2017,93.73913043478261
+Brooklyn,Bath Beach,2018,78.78571428571429
+Brooklyn,Bay Ridge,2014,97.71929824561404
+Brooklyn,Bay Ridge,2015,118.36307053941908
+Brooklyn,Bay Ridge,2016,95.77492291880782
+Brooklyn,Bay Ridge,2017,82.00634920634921
+Brooklyn,Bay Ridge,2018,107.11023622047244
+Brooklyn,Bedford-Stuyvesant,2014,122.65256602963281
+Brooklyn,Bedford-Stuyvesant,2015,121.76446148929371
+Brooklyn,Bedford-Stuyvesant,2016,102.94599436059048
+Brooklyn,Bedford-Stuyvesant,2017,99.23873019415309
+Brooklyn,Bedford-Stuyvesant,2018,106.56934715606613
+Brooklyn,Bensonhurst,2014,126.12962962962963
+Brooklyn,Bensonhurst,2015,101.61009174311927
+Brooklyn,Bensonhurst,2016,79.80139372822299
+Brooklyn,Bensonhurst,2017,79.81786941580756
+Brooklyn,Bensonhurst,2018,76.6268656716418
+Brooklyn,Bergen Beach,2014,146.58333333333334
+Brooklyn,Bergen Beach,2015,142.58333333333334
+Brooklyn,Bergen Beach,2016,64.2625
+Brooklyn,Bergen Beach,2017,127.48387096774194
+Brooklyn,Bergen Beach,2018,110.0
+Brooklyn,Boerum Hill,2014,236.01822323462414
+Brooklyn,Boerum Hill,2015,215.43755958055291
+Brooklyn,Boerum Hill,2016,168.35578262888993
+Brooklyn,Boerum Hill,2017,156.36324041811847
+Brooklyn,Boerum Hill,2018,200.89247311827958
+Brooklyn,Borough Park,2014,71.83168316831683
+Brooklyn,Borough Park,2015,81.93010752688173
+Brooklyn,Borough Park,2016,69.95424354243542
+Brooklyn,Borough Park,2017,84.85160202360876
+Brooklyn,Borough Park,2018,68.17213114754098
+Brooklyn,Brighton Beach,2014,108.63207547169812
+Brooklyn,Brighton Beach,2015,102.18181818181819
+Brooklyn,Brighton Beach,2016,107.14601018675721
+Brooklyn,Brighton Beach,2017,98.40531561461793
+Brooklyn,Brighton Beach,2018,144.359375
+Brooklyn,Brooklyn Heights,2014,240.01769911504425
+Brooklyn,Brooklyn Heights,2015,206.32289416846652
+Brooklyn,Brooklyn Heights,2016,193.16953316953317
+Brooklyn,Brooklyn Heights,2017,171.671875
+Brooklyn,Brooklyn Heights,2018,193.74666666666667
+Brooklyn,Brownsville,2014,79.0
+Brooklyn,Brownsville,2015,63.333333333333336
+Brooklyn,Brownsville,2016,68.19642857142857
+Brooklyn,Brownsville,2017,77.88421052631578
+Brooklyn,Brownsville,2018,73.71212121212122
+Brooklyn,Bushwick,2014,101.39863896848138
+Brooklyn,Bushwick,2015,98.94450542749115
+Brooklyn,Bushwick,2016,84.00997305856218
+Brooklyn,Bushwick,2017,80.56970935513169
+Brooklyn,Bushwick,2018,81.32197756543415
+Brooklyn,Canarsie,2014,102.86666666666666
+Brooklyn,Canarsie,2015,97.82978723404256
+Brooklyn,Canarsie,2016,101.60858895705522
+Brooklyn,Canarsie,2017,110.62295081967213
+Brooklyn,Canarsie,2018,98.29770992366412
+Brooklyn,Carroll Gardens,2014,223.94108019639935
+Brooklyn,Carroll Gardens,2015,216.05817610062894
+Brooklyn,Carroll Gardens,2016,185.01731927710844
+Brooklyn,Carroll Gardens,2017,174.20526315789473
+Brooklyn,Carroll Gardens,2018,175.39004149377593
+Brooklyn,Clinton Hill,2014,193.64705882352942
+Brooklyn,Clinton Hill,2015,212.16894087069525
+Brooklyn,Clinton Hill,2016,185.61358978401387
+Brooklyn,Clinton Hill,2017,173.36589497459062
+Brooklyn,Clinton Hill,2018,187.41068447412354
+Brooklyn,Cobble Hill,2014,195.71615720524017
+Brooklyn,Cobble Hill,2015,227.9894291754757
+Brooklyn,Cobble Hill,2016,191.09426987061
+Brooklyn,Cobble Hill,2017,182.74565560821486
+Brooklyn,Cobble Hill,2018,176.67368421052632
+Brooklyn,Columbia St,2014,173.97115384615384
+Brooklyn,Columbia St,2015,140.7803738317757
+Brooklyn,Columbia St,2016,156.338199513382
+Brooklyn,Columbia St,2017,177.30666666666667
+Brooklyn,Columbia St,2018,152.92857142857142
+Brooklyn,Coney Island,2014,145.72727272727272
+Brooklyn,Coney Island,2015,131.57627118644066
+Brooklyn,Coney Island,2016,91.73584905660377
+Brooklyn,Coney Island,2017,80.96190476190476
+Brooklyn,Coney Island,2018,91.17391304347827
+Brooklyn,Crown Heights,2014,126.31102693602693
+Brooklyn,Crown Heights,2015,120.1219512195122
+Brooklyn,Crown Heights,2016,99.80414116421409
+Brooklyn,Crown Heights,2017,96.18303918303918
+Brooklyn,Crown Heights,2018,104.9387239418825
+Brooklyn,Cypress Hills,2014,80.0
+Brooklyn,Cypress Hills,2015,76.6890756302521
+Brooklyn,Cypress Hills,2016,69.39974457215837
+Brooklyn,Cypress Hills,2017,65.3339552238806
+Brooklyn,Cypress Hills,2018,84.49565217391304
+Brooklyn,DUMBO,2014,231.11267605633802
+Brooklyn,DUMBO,2015,275.4318181818182
+Brooklyn,DUMBO,2016,201.85955056179776
+Brooklyn,DUMBO,2017,190.73451327433628
+Brooklyn,DUMBO,2018,187.14634146341464
+Brooklyn,Downtown Brooklyn,2014,217.27710843373495
+Brooklyn,Downtown Brooklyn,2015,189.7945205479452
+Brooklyn,Downtown Brooklyn,2016,141.80393912264995
+Brooklyn,Downtown Brooklyn,2017,133.3356258596974
+Brooklyn,Downtown Brooklyn,2018,151.1
+Brooklyn,Dyker Heights,2014,68.11111111111111
+Brooklyn,Dyker Heights,2015,59.138888888888886
+Brooklyn,Dyker Heights,2016,76.97540983606558
+Brooklyn,Dyker Heights,2017,79.87591240875912
+Brooklyn,Dyker Heights,2018,90.26315789473684
+Brooklyn,East Flatbush,2014,113.3092105263158
+Brooklyn,East Flatbush,2015,101.5987963891675
+Brooklyn,East Flatbush,2016,88.53652694610778
+Brooklyn,East Flatbush,2017,85.1307824100514
+Brooklyn,East Flatbush,2018,90.01980198019803
+Brooklyn,East New York,2014,91.86607142857143
+Brooklyn,East New York,2015,88.68277945619336
+Brooklyn,East New York,2016,104.96642468239564
+Brooklyn,East New York,2017,85.07718894009217
+Brooklyn,East New York,2018,87.65686274509804
+Brooklyn,Flatbush,2014,121.90232558139535
+Brooklyn,Flatbush,2015,109.37729941291585
+Brooklyn,Flatbush,2016,90.47551789077212
+Brooklyn,Flatbush,2017,89.57951621204323
+Brooklyn,Flatbush,2018,107.78190630048465
+Brooklyn,Flatlands,2014,110.6
+Brooklyn,Flatlands,2015,88.25675675675676
+Brooklyn,Flatlands,2016,90.4377990430622
+Brooklyn,Flatlands,2017,91.39942528735632
+Brooklyn,Flatlands,2018,91.44927536231884
+Brooklyn,Floyd Bennett Field,2015,150.0
+Brooklyn,Floyd Bennett Field,2016,100.0
+Brooklyn,Floyd Bennett Field,2017,90.0
+Brooklyn,Fort Greene,2014,180.82697426796807
+Brooklyn,Fort Greene,2015,171.5660672400313
+Brooklyn,Fort Greene,2016,147.41521739130434
+Brooklyn,Fort Greene,2017,138.71306721255544
+Brooklyn,Fort Greene,2018,154.359649122807
+Brooklyn,Fort Hamilton,2014,101.61111111111111
+Brooklyn,Fort Hamilton,2015,138.41011235955057
+Brooklyn,Fort Hamilton,2016,81.68589743589743
+Brooklyn,Fort Hamilton,2017,92.63953488372093
+Brooklyn,Fort Hamilton,2018,95.83870967741936
+Brooklyn,Gerritsen Beach,2014,125.75
+Brooklyn,Gerritsen Beach,2015,145.53846153846155
+Brooklyn,Gerritsen Beach,2016,142.35
+Brooklyn,Gerritsen Beach,2017,225.83333333333334
+Brooklyn,Gerritsen Beach,2018,82.5
+Brooklyn,Gowanus,2014,208.38031319910513
+Brooklyn,Gowanus,2015,284.2404661016949
+Brooklyn,Gowanus,2016,161.6784675072745
+Brooklyn,Gowanus,2017,148.6291390728477
+Brooklyn,Gowanus,2018,162.61133603238866
+Brooklyn,Gravesend,2014,106.5
+Brooklyn,Gravesend,2015,84.25
+Brooklyn,Gravesend,2016,89.98153846153846
+Brooklyn,Gravesend,2017,81.50352112676056
+Brooklyn,Gravesend,2018,64.81818181818181
+Brooklyn,Green-Wood Cemetery,2014,189.84
+Brooklyn,Green-Wood Cemetery,2015,172.16867469879517
+Brooklyn,Green-Wood Cemetery,2016,116.88888888888889
+Brooklyn,Green-Wood Cemetery,2017,67.86363636363636
+Brooklyn,Greenpoint,2014,164.4702620967742
+Brooklyn,Greenpoint,2015,185.10311993517018
+Brooklyn,Greenpoint,2016,130.5735540100361
+Brooklyn,Greenpoint,2017,120.8760894828588
+Brooklyn,Greenpoint,2018,143.12315698178665
+Brooklyn,Kensington,2014,112.05283018867925
+Brooklyn,Kensington,2015,133.94462025316454
+Brooklyn,Kensington,2016,92.83021390374331
+Brooklyn,Kensington,2017,102.193
+Brooklyn,Kensington,2018,89.26470588235294
+Brooklyn,Manhattan Beach,2014,73.5625
+Brooklyn,Manhattan Beach,2015,115.93023255813954
+Brooklyn,Manhattan Beach,2016,128.18556701030928
+Brooklyn,Manhattan Beach,2017,124.8
+Brooklyn,Manhattan Beach,2018,100.33333333333333
+Brooklyn,Marine Park,2014,171.25
+Brooklyn,Marine Park,2015,146.66666666666666
+Brooklyn,Marine Park,2016,77.5
+Brooklyn,Marine Park,2017,97.23076923076923
+Brooklyn,Midwood,2014,316.1313131313131
+Brooklyn,Midwood,2015,122.65853658536585
+Brooklyn,Midwood,2016,78.01218274111675
+Brooklyn,Midwood,2017,74.58215962441315
+Brooklyn,Midwood,2018,77.57142857142857
+Brooklyn,Mill Basin,2014,84.0
+Brooklyn,Mill Basin,2016,187.9090909090909
+Brooklyn,Mill Basin,2017,405.55555555555554
+Brooklyn,Mill Basin,2018,86.66666666666667
+Brooklyn,Navy Yard,2014,158.94285714285715
+Brooklyn,Navy Yard,2015,254.0
+Brooklyn,Navy Yard,2016,125.21551724137932
+Brooklyn,Navy Yard,2017,108.15294117647059
+Brooklyn,Navy Yard,2018,142.16666666666666
+Brooklyn,Park Slope,2014,181.30236486486487
+Brooklyn,Park Slope,2015,197.87031195233087
+Brooklyn,Park Slope,2016,164.77573591968692
+Brooklyn,Park Slope,2017,155.19062027231467
+Brooklyn,Park Slope,2018,170.1450676982592
+Brooklyn,Prospect Heights,2014,151.39689265536722
+Brooklyn,Prospect Heights,2015,148.88282138794085
+Brooklyn,Prospect Heights,2016,133.58319039451115
+Brooklyn,Prospect Heights,2017,121.68175705961453
+Brooklyn,Prospect Heights,2018,143.3038674033149
+Brooklyn,Prospect Park,2014,148.86503067484662
+Brooklyn,Prospect Park,2015,172.6712643678161
+Brooklyn,Prospect Park,2016,107.51838235294117
+Brooklyn,Prospect Park,2017,94.20481927710843
+Brooklyn,Prospect-Lefferts Gardens,2014,113.6614785992218
+Brooklyn,Prospect-Lefferts Gardens,2015,148.00095785440612
+Brooklyn,Prospect-Lefferts Gardens,2016,99.29817905918058
+Brooklyn,Prospect-Lefferts Gardens,2017,91.92732884399551
+Brooklyn,Prospect-Lefferts Gardens,2018,104.10583941605839
+Brooklyn,Red Hook,2014,175.63698630136986
+Brooklyn,Red Hook,2015,166.48823529411766
+Brooklyn,Red Hook,2016,149.29243937232525
+Brooklyn,Red Hook,2017,135.15659955257271
+Brooklyn,Red Hook,2018,152.81333333333333
+Brooklyn,Sea Gate,2016,268.3529411764706
+Brooklyn,Sea Gate,2017,187.3673469387755
+Brooklyn,Sea Gate,2018,600.1666666666666
+Brooklyn,Sheepshead Bay,2014,99.26618705035972
+Brooklyn,Sheepshead Bay,2015,114.64406779661017
+Brooklyn,Sheepshead Bay,2016,112.43927648578811
+Brooklyn,Sheepshead Bay,2017,105.15158371040724
+Brooklyn,Sheepshead Bay,2018,106.1044776119403
+Brooklyn,South Slope,2014,167.19850187265916
+Brooklyn,South Slope,2015,179.43918426802622
+Brooklyn,South Slope,2016,147.96216897856243
+Brooklyn,South Slope,2017,141.83035258048034
+Brooklyn,South Slope,2018,149.13588850174216
+Brooklyn,Sunset Park,2014,109.89897260273973
+Brooklyn,Sunset Park,2015,115.83048703352308
+Brooklyn,Sunset Park,2016,105.19370669745959
+Brooklyn,Sunset Park,2017,91.10947930574099
+Brooklyn,Sunset Park,2018,113.24815724815724
+Brooklyn,Vinegar Hill,2014,216.725
+Brooklyn,Vinegar Hill,2015,253.91666666666666
+Brooklyn,Vinegar Hill,2016,190.4327868852459
+Brooklyn,Vinegar Hill,2017,164.3782383419689
+Brooklyn,Vinegar Hill,2018,166.97058823529412
+Brooklyn,Williamsburg,2014,170.2526425681848
+Brooklyn,Williamsburg,2015,165.5297397769517
+Brooklyn,Williamsburg,2016,138.60292373599245
+Brooklyn,Williamsburg,2017,139.04836051353226
+Brooklyn,Williamsburg,2018,143.74652693151353
+Brooklyn,Windsor Terrace,2014,146.8375
+Brooklyn,Windsor Terrace,2015,163.55925925925925
+Brooklyn,Windsor Terrace,2016,133.23812949640288
+Brooklyn,Windsor Terrace,2017,126.66838311019568
+Brooklyn,Windsor Terrace,2018,130.4223602484472
+Manhattan,Battery Park City,2014,355.0485933503836
+Manhattan,Battery Park City,2015,336.9044502617801
+Manhattan,Battery Park City,2016,203.1923404255319
+Manhattan,Battery Park City,2017,204.11258278145695
+Manhattan,Battery Park City,2018,286.1617647058824
+Manhattan,Central Park,2014,228.1375464684015
+Manhattan,Central Park,2015,227.16528925619835
+Manhattan,Central Park,2016,208.96363636363637
+Manhattan,Central Park,2017,244.01162790697674
+Manhattan,Chelsea,2014,327.9646017699115
+Manhattan,Chelsea,2015,294.5549940546968
+Manhattan,Chelsea,2016,231.6916059854365
+Manhattan,Chelsea,2017,219.95821842250413
+Manhattan,Chelsea,2018,255.17169974115617
+Manhattan,Chinatown,2014,244.2555066079295
+Manhattan,Chinatown,2015,194.24782409528171
+Manhattan,Chinatown,2016,153.50459981600736
+Manhattan,Chinatown,2017,150.56494023904384
+Manhattan,Chinatown,2018,163.49056603773585
+Manhattan,Civic Center,2014,248.4055944055944
+Manhattan,Civic Center,2015,231.67158671586716
+Manhattan,Civic Center,2016,159.1370826010545
+Manhattan,Civic Center,2017,162.19594594594594
+Manhattan,Civic Center,2018,178.78571428571428
+Manhattan,East Harlem,2014,154.34263565891473
+Manhattan,East Harlem,2015,151.96838474803602
+Manhattan,East Harlem,2016,124.84661567563121
+Manhattan,East Harlem,2017,121.15722669578273
+Manhattan,East Harlem,2018,134.01325088339223
+Manhattan,East Village,2014,236.6156862745098
+Manhattan,East Village,2015,219.3976499189627
+Manhattan,East Village,2016,178.80390978833535
+Manhattan,East Village,2017,172.35043895375148
+Manhattan,East Village,2018,184.79668674698794
+Manhattan,Financial District,2014,315.792736935341
+Manhattan,Financial District,2015,317.9260330578512
+Manhattan,Financial District,2016,198.59823306689103
+Manhattan,Financial District,2017,183.22407079646018
+Manhattan,Financial District,2018,213.6891447368421
+Manhattan,Flatiron District,2014,401.4688346883469
+Manhattan,Flatiron District,2015,463.36897590361446
+Manhattan,Flatiron District,2016,302.344262295082
+Manhattan,Flatiron District,2017,321.0919540229885
+Manhattan,Flatiron District,2018,337.0
+Manhattan,Gramercy,2014,274.1821471652593
+Manhattan,Gramercy,2015,274.3342105263158
+Manhattan,Gramercy,2016,207.19372006386376
+Manhattan,Gramercy,2017,193.6105610561056
+Manhattan,Gramercy,2018,223.75305623471883
+Manhattan,Greenwich Village,2014,290.1473765432099
+Manhattan,Greenwich Village,2015,273.9647141848977
+Manhattan,Greenwich Village,2016,244.41536842105262
+Manhattan,Greenwich Village,2017,246.52092050209205
+Manhattan,Greenwich Village,2018,255.94939759036146
+Manhattan,Harlem,2014,144.64576232674392
+Manhattan,Harlem,2015,142.06025462155563
+Manhattan,Harlem,2016,113.34999454327185
+Manhattan,Harlem,2017,112.37834085387018
+Manhattan,Harlem,2018,122.29398907103825
+Manhattan,Hell's Kitchen,2014,267.68096867596734
+Manhattan,Hell's Kitchen,2015,255.66922209695602
+Manhattan,Hell's Kitchen,2016,195.87179935841354
+Manhattan,Hell's Kitchen,2017,184.26493725416745
+Manhattan,Hell's Kitchen,2018,204.59104046242774
+Manhattan,Inwood,2014,111.20526315789473
+Manhattan,Inwood,2015,106.3394584139265
+Manhattan,Inwood,2016,88.11692529772645
+Manhattan,Inwood,2017,83.8525993883792
+Manhattan,Inwood,2018,83.79098360655738
+Manhattan,Kips Bay,2014,329.96144174350377
+Manhattan,Kips Bay,2015,269.0826714801444
+Manhattan,Kips Bay,2016,209.31595514459966
+Manhattan,Kips Bay,2017,197.77855563743552
+Manhattan,Kips Bay,2018,209.7289527720739
+Manhattan,Little Italy,2014,258.1546762589928
+Manhattan,Little Italy,2015,224.72043010752688
+Manhattan,Little Italy,2016,216.74927113702623
+Manhattan,Little Italy,2017,178.61331220285263
+Manhattan,Little Italy,2018,212.83333333333334
+Manhattan,Lower East Side,2014,227.48558920102153
+Manhattan,Lower East Side,2015,211.03857949959644
+Manhattan,Lower East Side,2016,167.61805920476442
+Manhattan,Lower East Side,2017,154.2092146253484
+Manhattan,Lower East Side,2018,177.34842105263158
+Manhattan,Marble Hill,2014,178.27777777777777
+Manhattan,Marble Hill,2015,129.56521739130434
+Manhattan,Marble Hill,2016,88.16666666666667
+Manhattan,Marble Hill,2017,77.72368421052632
+Manhattan,Marble Hill,2018,96.66666666666667
+Manhattan,Midtown,2014,332.4485436893204
+Manhattan,Midtown,2015,379.7297633872976
+Manhattan,Midtown,2016,242.46816670928152
+Manhattan,Midtown,2017,245.79865067466267
+Manhattan,Midtown,2018,275.2310012062726
+Manhattan,Morningside Heights,2014,161.07067137809187
+Manhattan,Morningside Heights,2015,144.29067245119305
+Manhattan,Morningside Heights,2016,110.68944252590035
+Manhattan,Morningside Heights,2017,102.36722306525039
+Manhattan,Morningside Heights,2018,110.22311827956989
+Manhattan,Murray Hill,2014,349.909604519774
+Manhattan,Murray Hill,2015,351.61065830721003
+Manhattan,Murray Hill,2016,202.51255298337136
+Manhattan,Murray Hill,2017,188.6982558139535
+Manhattan,Murray Hill,2018,217.28370221327967
+Manhattan,NoHo,2014,320.6741573033708
+Manhattan,NoHo,2015,314.57894736842104
+Manhattan,NoHo,2016,280.591533180778
+Manhattan,NoHo,2017,304.37254901960785
+Manhattan,NoHo,2018,294.5609756097561
+Manhattan,Nolita,2014,302.23259493670884
+Manhattan,Nolita,2015,269.6183256427159
+Manhattan,Nolita,2016,213.53139013452915
+Manhattan,Nolita,2017,198.30078328981722
+Manhattan,Nolita,2018,219.06153846153848
+Manhattan,Randall's Island,2016,104.5
+Manhattan,Randall's Island,2017,75.71428571428571
+Manhattan,Roosevelt Island,2014,136.8
+Manhattan,Roosevelt Island,2015,119.02214022140221
+Manhattan,Roosevelt Island,2016,90.35851648351648
+Manhattan,Roosevelt Island,2017,82.33333333333333
+Manhattan,Roosevelt Island,2018,137.5
+Manhattan,SoHo,2014,341.6981981981982
+Manhattan,SoHo,2015,349.8115015974441
+Manhattan,SoHo,2016,275.0997639991418
+Manhattan,SoHo,2017,269.364972700546
+Manhattan,SoHo,2018,299.14074074074074
+Manhattan,Stuyvesant Town,2014,271.2805970149254
+Manhattan,Stuyvesant Town,2015,204.6866096866097
+Manhattan,Stuyvesant Town,2016,204.7482993197279
+Manhattan,Stuyvesant Town,2017,190.29752066115702
+Manhattan,Stuyvesant Town,2018,252.40740740740742
+Manhattan,Theater District,2014,363.8918918918919
+Manhattan,Theater District,2015,471.6060267857143
+Manhattan,Theater District,2016,261.57184073860356
+Manhattan,Theater District,2017,234.12593984962405
+Manhattan,Theater District,2018,256.07287449392715
+Manhattan,Tribeca,2014,459.5297504798464
+Manhattan,Tribeca,2015,434.7757805108798
+Manhattan,Tribeca,2016,329.1247178329571
+Manhattan,Tribeca,2017,324.94205607476636
+Manhattan,Tribeca,2018,426.01666666666665
+Manhattan,Two Bridges,2014,143.65248226950354
+Manhattan,Two Bridges,2015,134.1304347826087
+Manhattan,Two Bridges,2016,124.66009104704096
+Manhattan,Two Bridges,2017,116.57894736842105
+Manhattan,Two Bridges,2018,120.8923076923077
+Manhattan,Upper East Side,2014,253.69270323212535
+Manhattan,Upper East Side,2015,247.1999792444998
+Manhattan,Upper East Side,2016,181.48416483575372
+Manhattan,Upper East Side,2017,169.09140617880252
+Manhattan,Upper East Side,2018,178.73504721930746
+Manhattan,Upper West Side,2014,266.72860962566847
+Manhattan,Upper West Side,2015,263.4567040422124
+Manhattan,Upper West Side,2016,191.48116927260367
+Manhattan,Upper West Side,2017,183.36897042543097
+Manhattan,Upper West Side,2018,194.67473378509197
+Manhattan,Washington Heights,2014,136.2113606340819
+Manhattan,Washington Heights,2015,113.45100764419736
+Manhattan,Washington Heights,2016,90.55650684931507
+Manhattan,Washington Heights,2017,83.84737889847379
+Manhattan,Washington Heights,2018,89.56627906976745
+Manhattan,West Village,2014,342.1270553064275
+Manhattan,West Village,2015,359.3232766181372
+Manhattan,West Village,2016,239.41422722620266
+Manhattan,West Village,2017,238.48022598870057
+Manhattan,West Village,2018,262.63484486873506
+Queens,Arverne,2014,116.04
+Queens,Arverne,2015,116.93975903614458
+Queens,Arverne,2016,117.89614740368509
+Queens,Arverne,2017,104.18940936863544
+Queens,Arverne,2018,157.18666666666667
+Queens,Astoria,2014,118.43491816056118
+Queens,Astoria,2015,116.36595625350533
+Queens,Astoria,2016,111.13052114980135
+Queens,Astoria,2017,94.1160797465996
+Queens,Astoria,2018,126.01348314606741
+Queens,Bay Terrace,2014,121.875
+Queens,Bay Terrace,2015,120.15151515151516
+Queens,Bay Terrace,2016,118.85
+Queens,Bay Terrace,2017,107.28947368421052
+Queens,Bay Terrace,2018,119.4
+Queens,Bayside,2014,174.11111111111111
+Queens,Bayside,2015,138.45238095238096
+Queens,Bayside,2016,102.48179271708683
+Queens,Bayside,2017,88.73684210526316
+Queens,Bayside,2018,122.19444444444444
+Queens,Bayswater,2014,106.66666666666667
+Queens,Bayswater,2015,79.80952380952381
+Queens,Bayswater,2016,76.97
+Queens,Bayswater,2017,76.77777777777777
+Queens,Bayswater,2018,74.11111111111111
+Queens,Belle Harbor,2014,146.0
+Queens,Belle Harbor,2015,227.0
+Queens,Belle Harbor,2016,194.23076923076923
+Queens,Belle Harbor,2017,168.27272727272728
+Queens,Belle Harbor,2018,203.14285714285714
+Queens,Bellerose,2014,56.5
+Queens,Bellerose,2015,136.875
+Queens,Bellerose,2016,110.84375
+Queens,Bellerose,2017,88.5223880597015
+Queens,Bellerose,2018,81.0
+Queens,Breezy Point,2016,853.0
+Queens,Breezy Point,2018,195.0
+Queens,Briarwood,2014,76.6842105263158
+Queens,Briarwood,2015,67.86792452830188
+Queens,Briarwood,2016,91.0863309352518
+Queens,Briarwood,2017,72.35323383084577
+Queens,Briarwood,2018,98.48
+Queens,Broad Channel,2016,59.375
+Queens,Broad Channel,2017,60.0
+Queens,Cambria Heights,2014,80.7
+Queens,Cambria Heights,2015,94.72
+Queens,Cambria Heights,2016,68.88235294117646
+Queens,Cambria Heights,2017,71.52941176470588
+Queens,Cambria Heights,2018,76.5909090909091
+Queens,College Point,2014,178.4
+Queens,College Point,2015,186.10344827586206
+Queens,College Point,2016,161.35897435897436
+Queens,College Point,2017,96.53030303030303
+Queens,College Point,2018,536.1764705882352
+Queens,Corona,2014,80.58823529411765
+Queens,Corona,2015,153.93382352941177
+Queens,Corona,2016,62.62741312741313
+Queens,Corona,2017,59.53883495145631
+Queens,Corona,2018,64.95652173913044
+Queens,Cunningham Park,2015,70.0
+Queens,Cunningham Park,2016,79.42857142857143
+Queens,Cunningham Park,2017,171.0
+Queens,Ditmars Steinway,2014,123.07644628099173
+Queens,Ditmars Steinway,2015,109.37045813586099
+Queens,Ditmars Steinway,2016,93.28886590830749
+Queens,Ditmars Steinway,2017,92.5947879407256
+Queens,Ditmars Steinway,2018,99.1987951807229
+Queens,Douglaston,2016,131.0
+Queens,Douglaston,2017,146.33333333333334
+Queens,Douglaston,2018,84.11111111111111
+Queens,East Elmhurst,2014,89.2948717948718
+Queens,East Elmhurst,2015,85.60835509138381
+Queens,East Elmhurst,2016,84.3737658674189
+Queens,East Elmhurst,2017,75.3715953307393
+Queens,East Elmhurst,2018,80.75151515151515
+Queens,Edgemere,2014,128.8
+Queens,Edgemere,2015,138.5
+Queens,Edgemere,2016,143.26315789473685
+Queens,Edgemere,2017,135.65384615384616
+Queens,Edgemere,2018,99.7
+Queens,Elmhurst,2014,75.37209302325581
+Queens,Elmhurst,2015,81.78165938864629
+Queens,Elmhurst,2016,73.35075653370014
+Queens,Elmhurst,2017,74.48599137931035
+Queens,Elmhurst,2018,75.98648648648648
+Queens,Far Rockaway,2014,102.0909090909091
+Queens,Far Rockaway,2015,68.54736842105264
+Queens,Far Rockaway,2016,63.494505494505496
+Queens,Far Rockaway,2017,77.49655172413793
+Queens,Far Rockaway,2018,84.63636363636364
+Queens,Floral Park,2016,146.0
+Queens,Floral Park,2017,268.8181818181818
+Queens,Flushing,2014,109.41714285714286
+Queens,Flushing,2015,129.60575539568345
+Queens,Flushing,2016,86.48764906303236
+Queens,Flushing,2017,85.46786334684424
+Queens,Flushing,2018,96.99038461538461
+Queens,Flushing Meadows Corona Park,2014,137.66666666666666
+Queens,Flushing Meadows Corona Park,2015,142.69230769230768
+Queens,Flushing Meadows Corona Park,2016,142.0909090909091
+Queens,Flushing Meadows Corona Park,2017,59.6875
+Queens,Forest Hills,2014,116.67914438502673
+Queens,Forest Hills,2015,108.61367837338263
+Queens,Forest Hills,2016,105.17230527143981
+Queens,Forest Hills,2017,104.2005242463958
+Queens,Forest Hills,2018,127.12056737588652
+Queens,Forest Park,2014,97.66666666666667
+Queens,Forest Park,2015,90.84210526315789
+Queens,Forest Park,2016,80.63720930232559
+Queens,Forest Park,2017,81.90298507462687
+Queens,Fresh Meadows,2014,163.875
+Queens,Fresh Meadows,2015,153.72972972972974
+Queens,Fresh Meadows,2016,116.30714285714286
+Queens,Fresh Meadows,2017,106.80392156862744
+Queens,Fresh Meadows,2018,108.62962962962963
+Queens,Glen Oaks,2016,127.20833333333333
+Queens,Glen Oaks,2017,72.35
+Queens,Glendale,2014,112.92
+Queens,Glendale,2015,109.85483870967742
+Queens,Glendale,2016,70.45222929936305
+Queens,Glendale,2017,90.02325581395348
+Queens,Glendale,2018,76.42307692307692
+Queens,Hollis,2014,112.0
+Queens,Hollis,2015,58.125
+Queens,Hollis,2016,87.0
+Queens,Hollis,2017,96.7125
+Queens,Hollis,2018,111.33333333333333
+Queens,Hollis Hills,2014,67.0
+Queens,Hollis Hills,2015,72.57142857142857
+Queens,Hollis Hills,2016,182.05882352941177
+Queens,Hollis Hills,2017,133.44444444444446
+Queens,Holliswood,2015,43.0
+Queens,Holliswood,2016,85.55555555555556
+Queens,Holliswood,2017,136.5
+Queens,Holliswood,2018,161.0
+Queens,Howard Beach,2014,138.5
+Queens,Howard Beach,2015,134.41666666666666
+Queens,Howard Beach,2016,103.29310344827586
+Queens,Howard Beach,2017,102.03448275862068
+Queens,Howard Beach,2018,122.3
+Queens,Jackson Heights,2014,108.0646551724138
+Queens,Jackson Heights,2015,91.61471861471861
+Queens,Jackson Heights,2016,80.96420581655481
+Queens,Jackson Heights,2017,78.01252236135957
+Queens,Jackson Heights,2018,79.7231638418079
+Queens,Jamaica,2014,76.3913043478261
+Queens,Jamaica,2015,73.66666666666667
+Queens,Jamaica,2016,78.26381215469613
+Queens,Jamaica,2017,83.0316265060241
+Queens,Jamaica,2018,94.34375
+Queens,Jamaica Estates,2014,175.0
+Queens,Jamaica Estates,2015,196.7704918032787
+Queens,Jamaica Estates,2016,142.7816091954023
+Queens,Jamaica Estates,2017,114.4920634920635
+Queens,Jamaica Estates,2018,138.66666666666666
+Queens,Jamaica Hills,2014,73.4
+Queens,Jamaica Hills,2015,58.666666666666664
+Queens,Jamaica Hills,2016,56.15384615384615
+Queens,Jamaica Hills,2017,95.55555555555556
+Queens,Jamaica Hills,2018,57.5
+Queens,John F. Kennedy International Airport,2016,171.66666666666666
+Queens,John F. Kennedy International Airport,2017,144.28571428571428
+Queens,Kew Gardens,2014,108.75555555555556
+Queens,Kew Gardens,2015,99.88513513513513
+Queens,Kew Gardens,2016,83.12048192771084
+Queens,Kew Gardens,2017,88.57205240174673
+Queens,Kew Gardens,2018,87.19354838709677
+Queens,Kew Gardens Hills,2014,126.15
+Queens,Kew Gardens Hills,2015,145.9111111111111
+Queens,Kew Gardens Hills,2016,109.25641025641026
+Queens,Kew Gardens Hills,2017,117.84466019417475
+Queens,Kew Gardens Hills,2018,115.05882352941177
+Queens,LaGuardia Airport,2014,67.0
+Queens,LaGuardia Airport,2015,76.0
+Queens,LaGuardia Airport,2016,47.421052631578945
+Queens,LaGuardia Airport,2017,48.95652173913044
+Queens,Laurelton,2014,122.375
+Queens,Laurelton,2015,85.05
+Queens,Laurelton,2016,68.05882352941177
+Queens,Laurelton,2017,99.8225806451613
+Queens,Laurelton,2018,69.53333333333333
+Queens,Little Neck,2016,147.55555555555554
+Queens,Little Neck,2017,58.75
+Queens,Little Neck,2018,42.333333333333336
+Queens,Long Island City,2014,164.41050375133977
+Queens,Long Island City,2015,155.5884094754653
+Queens,Long Island City,2016,119.99922178988326
+Queens,Long Island City,2017,118.69964435822826
+Queens,Long Island City,2018,121.49397590361446
+Queens,Maspeth,2014,153.3
+Queens,Maspeth,2015,97.93273542600897
+Queens,Maspeth,2016,71.81753889674681
+Queens,Maspeth,2017,68.58906525573192
+Queens,Maspeth,2018,82.79166666666667
+Queens,Middle Village,2014,118.02564102564102
+Queens,Middle Village,2015,101.41176470588235
+Queens,Middle Village,2016,88.2046511627907
+Queens,Middle Village,2017,76.31818181818181
+Queens,Middle Village,2018,116.14814814814815
+Queens,Neponsit,2014,287.6666666666667
+Queens,Neponsit,2015,330.1
+Queens,Neponsit,2016,314.54545454545456
+Queens,Neponsit,2017,287.0
+Queens,Neponsit,2018,249.5
+Queens,Ozone Park,2014,112.73529411764706
+Queens,Ozone Park,2015,90.34653465346534
+Queens,Ozone Park,2016,83.97
+Queens,Ozone Park,2017,79.20982142857143
+Queens,Ozone Park,2018,89.75555555555556
+Queens,Queens Village,2014,98.76
+Queens,Queens Village,2015,79.6774193548387
+Queens,Queens Village,2016,73.47719298245615
+Queens,Queens Village,2017,66.27461139896373
+Queens,Queens Village,2018,81.76923076923077
+Queens,Rego Park,2014,107.61290322580645
+Queens,Rego Park,2015,103.39917695473251
+Queens,Rego Park,2016,130.48027210884354
+Queens,Rego Park,2017,84.01988071570577
+Queens,Rego Park,2018,76.47252747252747
+Queens,Richmond Hill,2014,240.23863636363637
+Queens,Richmond Hill,2015,207.4712643678161
+Queens,Richmond Hill,2016,125.40384615384616
+Queens,Richmond Hill,2017,82.66369047619048
+Queens,Richmond Hill,2018,81.72289156626506
+Queens,Ridgewood,2014,98.92032967032966
+Queens,Ridgewood,2015,92.70847457627119
+Queens,Ridgewood,2016,75.93707796193983
+Queens,Ridgewood,2017,71.19795539033457
+Queens,Ridgewood,2018,76.86989795918367
+Queens,Rockaway Beach,2014,88.46153846153847
+Queens,Rockaway Beach,2015,132.15702479338842
+Queens,Rockaway Beach,2016,120.8119658119658
+Queens,Rockaway Beach,2017,119.88755020080322
+Queens,Rockaway Beach,2018,113.97014925373135
+Queens,Rockaway Park,2014,181.3653846153846
+Queens,Rockaway Park,2015,146.95419847328245
+Queens,Rockaway Park,2016,135.28690807799444
+Queens,Rockaway Park,2017,134.38582677165354
+Queens,Rosedale,2014,98.45454545454545
+Queens,Rosedale,2015,99.95652173913044
+Queens,Rosedale,2016,100.6319018404908
+Queens,Rosedale,2017,77.31282051282051
+Queens,Rosedale,2018,73.825
+Queens,South Ozone Park,2014,140.5
+Queens,South Ozone Park,2015,134.74418604651163
+Queens,South Ozone Park,2016,111.54421768707483
+Queens,South Ozone Park,2017,96.30841121495327
+Queens,South Ozone Park,2018,70.10416666666667
+Queens,Springfield Gardens,2014,88.1
+Queens,Springfield Gardens,2015,90.25510204081633
+Queens,Springfield Gardens,2016,80.97379912663756
+Queens,Springfield Gardens,2017,76.3160621761658
+Queens,Springfield Gardens,2018,87.7258064516129
+Queens,St. Albans,2014,79.47619047619048
+Queens,St. Albans,2015,71.2457627118644
+Queens,St. Albans,2016,80.03076923076924
+Queens,St. Albans,2017,88.23566878980891
+Queens,St. Albans,2018,98.6056338028169
+Queens,Sunnyside,2014,104.68171557562077
+Queens,Sunnyside,2015,115.2369714847591
+Queens,Sunnyside,2016,108.22356384924991
+Queens,Sunnyside,2017,90.56882821387941
+Queens,Sunnyside,2018,90.15555555555555
+Queens,Whitestone,2015,201.875
+Queens,Whitestone,2016,137.42
+Queens,Whitestone,2017,127.77551020408163
+Queens,Whitestone,2018,293.3333333333333
+Queens,Woodhaven,2014,106.375
+Queens,Woodhaven,2015,86.56179775280899
+Queens,Woodhaven,2016,64.40689655172413
+Queens,Woodhaven,2017,56.13779527559055
+Queens,Woodhaven,2018,66.13636363636364
+Queens,Woodside,2014,104.68862275449102
+Queens,Woodside,2015,91.96146788990826
+Queens,Woodside,2016,75.59375
+Queens,Woodside,2017,81.64301801801801
+Queens,Woodside,2018,78.52380952380952
+Staten Island,Arden Heights,2014,100.0
+Staten Island,Arden Heights,2015,38.46153846153846
+Staten Island,Arden Heights,2016,52.595238095238095
+Staten Island,Arden Heights,2017,57.55882352941177
+Staten Island,Arden Heights,2018,58.0
+Staten Island,Arrochar,2014,300.2857142857143
+Staten Island,Arrochar,2015,347.0
+Staten Island,Arrochar,2016,307.70642201834863
+Staten Island,Arrochar,2017,201.09677419354838
+Staten Island,Arrochar,2018,109.5
+Staten Island,"Bay Terrace, Staten Island",2014,1714.25
+Staten Island,"Bay Terrace, Staten Island",2015,465.6
+Staten Island,"Bay Terrace, Staten Island",2016,121.28571428571429
+Staten Island,"Bay Terrace, Staten Island",2017,75.0
+Staten Island,"Bay Terrace, Staten Island",2018,150.0
+Staten Island,Bull's Head,2014,140.0
+Staten Island,Bull's Head,2015,48.0
+Staten Island,Bull's Head,2018,48.0
+Staten Island,Castleton Corners,2014,114.25
+Staten Island,Castleton Corners,2015,79.625
+Staten Island,Castleton Corners,2016,67.02127659574468
+Staten Island,Castleton Corners,2017,123.78787878787878
+Staten Island,Castleton Corners,2018,99.8
+Staten Island,Charleston,2016,350.0
+Staten Island,Clifton,2014,105.0
+Staten Island,Clifton,2015,71.76315789473684
+Staten Island,Clifton,2016,75.81756756756756
+Staten Island,Clifton,2017,88.54651162790698
+Staten Island,Clifton,2018,79.93333333333334
+Staten Island,Concord,2014,121.61538461538461
+Staten Island,Concord,2015,108.84
+Staten Island,Concord,2016,102.87603305785125
+Staten Island,Concord,2017,66.0
+Staten Island,Concord,2018,44.76470588235294
+Staten Island,Dongan Hills,2014,1713.25
+Staten Island,Dongan Hills,2015,131.21428571428572
+Staten Island,Dongan Hills,2016,409.20588235294116
+Staten Island,Dongan Hills,2017,121.15789473684211
+Staten Island,Dongan Hills,2018,92.5
+Staten Island,Eltingville,2014,75.66666666666667
+Staten Island,Eltingville,2015,84.64285714285714
+Staten Island,Eltingville,2016,71.96428571428571
+Staten Island,Eltingville,2017,68.5
+Staten Island,Eltingville,2018,67.5
+Staten Island,Emerson Hill,2014,95.61111111111111
+Staten Island,Emerson Hill,2015,85.45714285714286
+Staten Island,Emerson Hill,2016,97.18987341772151
+Staten Island,Emerson Hill,2017,84.6938775510204
+Staten Island,Emerson Hill,2018,62.75
+Staten Island,Fort Wadsworth,2018,750.0
+Staten Island,Graniteville,2014,186.33333333333334
+Staten Island,Graniteville,2015,153.38095238095238
+Staten Island,Graniteville,2016,125.72727272727273
+Staten Island,Graniteville,2017,163.0
+Staten Island,Graniteville,2018,67.75
+Staten Island,Grant City,2015,140.8
+Staten Island,Grant City,2017,82.5
+Staten Island,Grant City,2018,70.66666666666667
+Staten Island,Great Kills,2014,39.0
+Staten Island,Great Kills,2015,78.05882352941177
+Staten Island,Great Kills,2016,80.90243902439025
+Staten Island,Great Kills,2017,74.4
+Staten Island,Great Kills,2018,85.66666666666667
+Staten Island,Grymes Hill,2015,96.66666666666667
+Staten Island,Grymes Hill,2016,117.66666666666667
+Staten Island,Grymes Hill,2017,105.22727272727273
+Staten Island,Grymes Hill,2018,103.6
+Staten Island,Howland Hook,2016,66.15384615384616
+Staten Island,Howland Hook,2017,74.15384615384616
+Staten Island,Howland Hook,2018,95.0
+Staten Island,Huguenot,2017,90.9090909090909
+Staten Island,Huguenot,2018,128.0
+Staten Island,Latourette Park,2014,911.5
+Staten Island,Latourette Park,2016,86.0
+Staten Island,Latourette Park,2017,85.0
+Staten Island,Lighthouse Hill,2014,204.0
+Staten Island,Lighthouse Hill,2015,190.0
+Staten Island,Lighthouse Hill,2016,175.0
+Staten Island,Lighthouse Hill,2017,196.42857142857142
+Staten Island,Lighthouse Hill,2018,157.5
+Staten Island,Mariners Harbor,2014,76.875
+Staten Island,Mariners Harbor,2015,105.47826086956522
+Staten Island,Mariners Harbor,2016,95.23333333333333
+Staten Island,Mariners Harbor,2017,106.21311475409836
+Staten Island,Mariners Harbor,2018,91.42857142857143
+Staten Island,Midland Beach,2014,97.82352941176471
+Staten Island,Midland Beach,2015,94.46511627906976
+Staten Island,Midland Beach,2016,89.59722222222223
+Staten Island,Midland Beach,2017,76.43396226415095
+Staten Island,Midland Beach,2018,80.0
+Staten Island,New Brighton,2014,89.6
+Staten Island,New Brighton,2015,82.38297872340425
+Staten Island,New Brighton,2016,76.51181102362204
+Staten Island,New Brighton,2017,69.54838709677419
+Staten Island,New Brighton,2018,77.0
+Staten Island,New Dorp,2014,105.0
+Staten Island,New Dorp,2015,117.0
+Staten Island,New Dorp,2018,57.0
+Staten Island,New Dorp Beach,2014,336.5
+Staten Island,New Dorp Beach,2015,53.95
+Staten Island,New Dorp Beach,2016,51.5
+Staten Island,New Dorp Beach,2017,64.875
+Staten Island,New Dorp Beach,2018,49.0
+Staten Island,New Springville,2014,71.5
+Staten Island,New Springville,2015,60.5
+Staten Island,New Springville,2016,83.36734693877551
+Staten Island,New Springville,2017,73.62068965517241
+Staten Island,New Springville,2018,59.2
+Staten Island,Oakwood,2014,81.3
+Staten Island,Oakwood,2015,77.88888888888889
+Staten Island,Oakwood,2016,79.0952380952381
+Staten Island,Oakwood,2017,99.0909090909091
+Staten Island,Oakwood,2018,69.0
+Staten Island,Park Hill,2015,128.72727272727272
+Staten Island,Park Hill,2016,84.47619047619048
+Staten Island,Park Hill,2017,65.11111111111111
+Staten Island,Pleasant Plains,2018,53.0
+Staten Island,Port Richmond,2014,161.8
+Staten Island,Port Richmond,2015,212.57142857142858
+Staten Island,Port Richmond,2016,146.05263157894737
+Staten Island,Port Richmond,2017,57.57142857142857
+Staten Island,Port Richmond,2018,97.42857142857143
+Staten Island,Prince's Bay,2016,35.0
+Staten Island,Prince's Bay,2018,134.0
+Staten Island,Randall Manor,2014,782.5
+Staten Island,Randall Manor,2015,1044.340909090909
+Staten Island,Randall Manor,2016,163.17757009345794
+Staten Island,Randall Manor,2017,226.51639344262296
+Staten Island,Randall Manor,2018,375.0
+Staten Island,Richmondtown,2015,99.0
+Staten Island,Richmondtown,2016,89.6
+Staten Island,Richmondtown,2017,74.94444444444444
+Staten Island,Richmondtown,2018,78.0
+Staten Island,Rosebank,2014,112.0
+Staten Island,Rosebank,2015,111.15384615384616
+Staten Island,Rosebank,2016,76.9090909090909
+Staten Island,Rosebank,2017,55.0
+Staten Island,Rosebank,2018,129.33333333333334
+Staten Island,Rossville,2016,30.0
+Staten Island,Rossville,2018,67.5
+Staten Island,Shore Acres,2014,72.42857142857143
+Staten Island,Shore Acres,2015,96.90566037735849
+Staten Island,Shore Acres,2016,124.87603305785125
+Staten Island,Shore Acres,2017,89.20689655172414
+Staten Island,Shore Acres,2018,115.5
+Staten Island,Silver Lake,2014,126.0
+Staten Island,Silver Lake,2015,66.5
+Staten Island,Silver Lake,2016,73.89285714285714
+Staten Island,Silver Lake,2017,95.0
+Staten Island,Silver Lake,2018,56.5
+Staten Island,South Beach,2015,35.785714285714285
+Staten Island,South Beach,2016,63.73170731707317
+Staten Island,South Beach,2017,116.89655172413794
+Staten Island,South Beach,2018,101.6
+Staten Island,St. George,2014,190.22222222222223
+Staten Island,St. George,2015,127.76679841897233
+Staten Island,St. George,2016,92.30982905982906
+Staten Island,St. George,2017,98.34957020057307
+Staten Island,St. George,2018,116.79166666666667
+Staten Island,Stapleton,2014,148.2
+Staten Island,Stapleton,2015,117.41666666666667
+Staten Island,Stapleton,2016,88.54807692307692
+Staten Island,Stapleton,2017,85.05128205128206
+Staten Island,Stapleton,2018,79.03571428571429
+Staten Island,Todt Hill,2014,80.77777777777777
+Staten Island,Todt Hill,2015,163.47619047619048
+Staten Island,Todt Hill,2016,242.82758620689654
+Staten Island,Todt Hill,2017,258.1333333333333
+Staten Island,Todt Hill,2018,245.5
+Staten Island,Tompkinsville,2014,64.55555555555556
+Staten Island,Tompkinsville,2015,60.12
+Staten Island,Tompkinsville,2016,66.74015748031496
+Staten Island,Tompkinsville,2017,67.22448979591837
+Staten Island,Tompkinsville,2018,77.61111111111111
+Staten Island,Tottenville,2014,247.5
+Staten Island,Tottenville,2015,261.5
+Staten Island,Tottenville,2016,190.73333333333332
+Staten Island,Tottenville,2017,212.28571428571428
+Staten Island,Tottenville,2018,192.25
+Staten Island,West Brighton,2014,137.4
+Staten Island,West Brighton,2015,121.16666666666667
+Staten Island,West Brighton,2016,98.51851851851852
+Staten Island,West Brighton,2017,84.64516129032258
+Staten Island,West Brighton,2018,79.17647058823529
+Staten Island,Westerleigh,2014,1001.1
+Staten Island,Westerleigh,2015,1629.4285714285713
+Staten Island,Westerleigh,2016,844.5833333333334
+Staten Island,Westerleigh,2017,699.1875
+Staten Island,Westerleigh,2018,71.5
+Staten Island,Willowbrook,2018,249.0
+Staten Island,Woodrow,2014,800.0
+Staten Island,Woodrow,2015,787.3
+Staten Island,Woodrow,2016,656.4285714285714
+Staten Island,Woodrow,2017,523.6363636363636
+Staten Island,Woodrow,2018,700.0
