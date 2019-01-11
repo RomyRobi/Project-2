@@ -1,4 +1,5 @@
 function statAverage(data, category){
+
   total = 0;
   data.forEach(entry => {
     total += entry[category];
@@ -69,36 +70,37 @@ var config = {
 var myChart = new Chart(ctx, config);
 
 
-const csv = "static/listings.csv"
-
-d3.csv(csv).then(function(listingsData) {
+// const csv = "static/listings.csv"
+var url = '/listings_data';
+d3.json(url).then(function(listingsJSON) {
+  console.log(listingsJSON);
   //// Code for abridging data. Only NAN returned for unknown reason
-  // var polarData = [];
-  // var currData ={};
-  //
-  // listingsData.forEach(function(data) {
-  //   currData.neighbourhood_group_cleansed = data.neighbourhood_group_cleansed;
-  //   currData.accommodates = +data.accommodates;
-  //   currData.price = parseFloat(data.price.replace(/[^0-9-.]/g, ''));
-  //   currData.minimum_nights = +data.minimum_nights;
-  //   currData.review_scores_rating = +data.review_scores_rating;
-  //   currData.review_scores_location = +data.review_scores_location;
-  //   console.log(currData);
-  //   polarData.push(currData);
-  //   console.log(polarData[polarData.length -1])
-  // });
-  //
-  // console.log(polarData);
+  var listingsData = [];
+  var currData ={};
+
+  Object.keys(listingsJSON).forEach(function(data) {
+    currData.neighbourhood_group_cleansed = listingsJSON[data].neighbourhood_group_cleansed;
+    currData.accommodates = listingsJSON[data].accommodates;
+    currData.price = listingsJSON[data].price;
+    currData.review_scores_rating = listingsJSON[data].review_scores_rating;
+    currData.review_scores_location = listingsJSON[data].review_scores_location;
+    // console.log(currData);
+    listingsData.push(currData);
+    // console.log(listingsData[listingsData.length -1])
+  });
+
+  console.log(listingsData);
 
   // parse data
-  listingsData.forEach(function(data) {
-    data.neighbourhood_group_cleansed = data.neighbourhood_group_cleansed;
-    data.accommodates = +data.accommodates;
-    data.price = parseFloat(data.price.replace(/[^0-9-.]/g, ''));
-    data.minimum_nights = +data.minimum_nights;
-    data.review_scores_rating = +data.review_scores_rating;
-    data.review_scores_location = +data.review_scores_location;
-  });
+  // Object.keys(listingsData).forEach(function(data) {
+  //   console.log(data);
+  //   data.neighbourhood_group_cleansed = data.neighbourhood_group_cleansed;
+  //   data.accommodates = +data.accommodates;
+  //   data.price = parseFloat(data.price.replace(/[^0-9-.]/g, ''));
+  //   data.minimum_nights = +data.minimum_nights;
+  //   data.review_scores_rating = +data.review_scores_rating;
+  //   data.review_scores_location = +data.review_scores_location;
+  // });
 
   // Event Listener for "Listings"
   document.getElementById('listingsCount').addEventListener('click', function() {
