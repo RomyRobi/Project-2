@@ -32,7 +32,7 @@ app = Flask(__name__)
 
 # app method
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///db/airbnb-sqlite.db"
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
+app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = True
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -41,7 +41,7 @@ Base = automap_base()
 Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-NYC = Base.classes.nyc
+nyc = Base.classes.nyc
 nyc_hist = Base.classes.nyc_hist
 
 
@@ -52,25 +52,25 @@ def index():
     return render_template("index.html")
 
 
-
-@app.route("/api/metadata")
-def names():
-    """Return categories of metadata."""
-
 @app.route("/api/nyc/metadata")
 def listings_names():
     """Return listings metadata."""
 
 
     # Use Pandas to perform the sql query
+
     # stmt = db.session.query(NYC).statement
     # df = pd.read_sql_query(stmt, db.session.bind)
 
-    # Return a list of the column names (sample names)
-    # return jsonify(list(df.columns)[2:])
+    stmt = db.session.query(nyc).statement
+    df = pd.read_sql_query(stmt, db.session.bind)
+
+
+    # Return a list of the column names (sample names)s
+    return jsonify(list(df.columns)[2:])
     # results =db.session.query()
 
-    return jsonify(list(NYC.columns))
+    # return jsonify(list(NYC.columns))
 
 
 @app.route("/api/nyc_hist/metadata")
@@ -86,52 +86,46 @@ def historical_names():
 
 
 
-@app.route("/metadata/<sample>")
-def sample_metadata(sample):
-    """Return the MetaData for a given sample."""
-    sel = [
-        Samples_Metadata.sample,
-        Samples_Metadata.ETHNICITY,
-        Samples_Metadata.GENDER,
-        Samples_Metadata.AGE,
-        Samples_Metadata.LOCATION,
-        Samples_Metadata.BBTYPE,
-        Samples_Metadata.WFREQ,
-    ]
+@app.route("/listings_data")
+def listings_data():
+    """Return the Data from the nyc table (listings.csv)."""
 
-    results = db.session.query(*sel).filter(Samples_Metadata.sample == sample).all()
-
+    stmt = db.session.query(nyc).statement
+    df = pd.read_sql_query(stmt, db.session.bind)
+    df["latitude"] = pd.to_numeric(df["latitude"])
+    df["longitude"] = pd.to_numeric(df["longitude"])
+    df["accommodates"] = pd.to_numeric(df["accommodates"])
+    data = df.to_dict(orient='index')
     # Create a dictionary entry for each row of metadata information
-    sample_metadata = {}
-    for result in results:
-        sample_metadata["SAMPLEID"] = result[0]
-        sample_metadata["ETHNICITY"] = result[1]
-        sample_metadata["GENDER"] = result[2]
-        sample_metadata["AGE"] = result[3]
-        sample_metadata["LOCATION"] = result[4]
-        sample_metadata["BBTYPE"] = result[5]
-        sample_metadata["WFREQ"] = result[6]
+    # data = {}
+    # for result in results:
+    #
+    #     data["ID"] = result[0]
+    #     data["LISTING_URL"] = result[1]
+    #     data["NAME"] = result[2]
+    #     data["HOST_ID"] = result[3]
+    #     data["NEIGHBORHOOD"] = result[4]
+    #     data["NEIGHBORHOOD_GROUP"] = result[5]
+    #     data["CITY"] = result[6]
+    #     data["ZIPCODE"] = result[7]
+    #     data["LAT"] = float(result[8])
+    #     data["LON"] = float(result[9])
+    #
+    # print(data)
+    return jsonify(data)
 
-    print(sample_metadata)
-    return jsonify(sample_metadata)
+@app.route("/historic_data")
+def historic_data():
+    """Return the Data from the nyc table (historic.csv)."""
 
-
-@app.route("/api/<sample>")
-def samples(sample):
-    """Return `otu_ids`, `otu_labels`,and `sample_values`."""
-    stmt = db.session.query(Samples).statement
+    stmt = db.session.query(nyc_hist).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
-    # Filter the data based on the sample number and
-    # only keep rows with values above 1
-    sample_data = df.loc[df[sample] > 1, ["otu_id", "otu_label", sample]]
-    # Format the data to send as json
-    data = {
-        "otu_ids": sample_data.otu_id.values.tolist(),
-        "sample_values": sample_data[sample].values.tolist(),
-        "otu_labels": sample_data.otu_label.tolist(),
-    }
-    return jsonify(data)
+    data = df.to_json(orient='index')
+
+    return data
+
+
 
 
 if __name__ == "__main__":
