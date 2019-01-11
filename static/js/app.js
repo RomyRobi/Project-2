@@ -2,8 +2,8 @@ function statAverage(data, category){
   total = 0;
   currlen = 0;
   data.forEach(entry => {
-    if (entry !=){
-      total += entry[category];
+    if (entry[category] != ''){
+      total += parseInt(entry[category]);
       currlen += 1;
     }
   });
