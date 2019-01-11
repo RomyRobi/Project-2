@@ -69,6 +69,7 @@
 }
 
 #map {
+  position: relative;
   padding: 10px;
   overflow: hidden;
 }
