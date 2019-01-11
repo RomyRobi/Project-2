@@ -42,7 +42,7 @@ Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
 nyc = Base.classes.nyc
-nyc_hist = Base.classes.nyc_hist
+#nyc_hist = Base.classes.nyc_hist
 
 
 
@@ -73,16 +73,16 @@ def listings_names():
     # return jsonify(list(NYC.columns))
 
 
-@app.route("/api/nyc_hist/metadata")
-def historical_names():
-    """Return historical metadata."""
+#@app.route("/api/nyc_hist/metadata")
+#def historical_names():
+    #"""Return historical metadata."""
 
     # Use Pandas to perform the sql query
-    stmt = db.session.query(nyc_hist).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+    #stmt = db.session.query(nyc_hist).statement
+    #df = pd.read_sql_query(stmt, db.session.bind)
 
     # Return a list of the column names (sample names)
-    return jsonify(list(df.columns)[2:])
+    #return jsonify(list(df.columns)[2:])
 
 
 
@@ -95,7 +95,7 @@ def listings_data():
     df["latitude"] = pd.to_numeric(df["latitude"])
     df["longitude"] = pd.to_numeric(df["longitude"])
     df["accommodates"] = pd.to_numeric(df["accommodates"])
-    
+
     data = df.to_dict(orient='index')
     # Create a dictionary entry for each row of metadata information
     # data = {}
