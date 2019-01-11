@@ -94,7 +94,7 @@ def listings_data():
     df = pd.read_sql_query(stmt, db.session.bind)
     df["latitude"] = pd.to_numeric(df["latitude"])
     df["longitude"] = pd.to_numeric(df["longitude"])
-    df["accommodates"] = pd.to_numeric(df["price"])
+    df["accommodates"] = pd.to_numeric(df["accommodates"])
     data = df.to_dict(orient='index')
     # Create a dictionary entry for each row of metadata information
     # data = {}
