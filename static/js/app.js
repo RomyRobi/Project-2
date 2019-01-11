@@ -7,7 +7,7 @@ function statAverage(data, category){
       currlen += 1;
     }
   });
-  return total/currlen;
+  return +((total/currlen).toFixed(2));
 }
 
 var boroughs = [
