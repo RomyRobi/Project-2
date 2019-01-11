@@ -95,6 +95,7 @@ def listings_data():
     df["latitude"] = pd.to_numeric(df["latitude"])
     df["longitude"] = pd.to_numeric(df["longitude"])
     df["accommodates"] = pd.to_numeric(df["accommodates"])
+    df["review_scores_rating"] = pd.to_numeric(df["review_scores_rating"])
     data = df.to_dict(orient='index')
     # Create a dictionary entry for each row of metadata information
     # data = {}
@@ -112,6 +113,7 @@ def listings_data():
     #     data["LON"] = float(result[9])
     #
     # print(data)
+
     return jsonify(data)
 
 @app.route("/historic_data")
