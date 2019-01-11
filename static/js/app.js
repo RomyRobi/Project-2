@@ -1,10 +1,13 @@
 function statAverage(data, category){
-
   total = 0;
+  currlen = 0;
   data.forEach(entry => {
-    total += entry[category];
+    if (entry !=){
+      total += entry[category];
+      currlen += 1;
+    }
   });
-  return total/data.length;
+  return total/currlen;
 }
 
 var boroughs = [
