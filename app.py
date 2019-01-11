@@ -95,7 +95,7 @@ def listings_data():
     df["latitude"] = pd.to_numeric(df["latitude"])
     df["longitude"] = pd.to_numeric(df["longitude"])
     df["accommodates"] = pd.to_numeric(df["accommodates"])
-    df["review_scores_rating"] = pd.to_numeric(df["review_scores_rating"])
+    
     data = df.to_dict(orient='index')
     # Create a dictionary entry for each row of metadata information
     # data = {}
@@ -123,9 +123,9 @@ def historic_data():
     stmt = db.session.query(nyc_hist).statement
     df = pd.read_sql_query(stmt, db.session.bind)
 
-    data = df.to_json(orient='index')
+    data = df.to_dict(orient='index')
 
-    return data
+    return jsonify(data)
 
 
 
