@@ -56,6 +56,9 @@ var polarChartOptions = {
   animation: {
     animateRotate: false,
     animateScale: true
+  },
+  layout:{
+    padding: 8
   }
 };
 
