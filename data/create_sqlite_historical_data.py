@@ -11,7 +11,7 @@ def create_connection(db_file):
         cur.execute("CREATE TABLE nyc_hist (id INTEGER PRIMARY KEY, Date TEXT, Price INTEGER, Neighborhood INTEGER, \
                     Borough TEXT, Latitude TEXT, Longitude TEXT, Review TEXT, Room_Type TEXT);")
         csvfile = "historical_data.csv"
-        df = pd.read_csv(csvfile)
+        df = pd.read_csv(csvfile, keep_default_na = False)
         print(df.head())
         df.to_sql("nyc_hist", conn, if_exists='append', index=False)
         conn.commit()
