@@ -31,7 +31,7 @@ d3.json(filepath).then(function(data) {
     valueProperty: "2018",
 
     // Set color scale
-    scale: ["#e6ffff", "#006680"],
+    scale: ["#ffe6e6", "#ff1a21"],
 
     // Number of breaks in step range
     steps: 8,
