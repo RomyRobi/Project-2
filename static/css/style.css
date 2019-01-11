@@ -2,6 +2,8 @@ body {
   overflow-x: hidden;
 }
 
+
+
 .header {
   width: 100%;
   color: white;
@@ -75,12 +77,12 @@ body {
 
 #map {
   position: relative;
-<<<<<<< HEAD
+
   padding: 10px;
-=======
+
   height: inherit;
   /* padding: 10px; */
->>>>>>> master
+
   overflow: hidden;
   width: 100% !important;
 }
