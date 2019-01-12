@@ -86,8 +86,8 @@ var lineChartData = {
       labels: yearsStr,
       datasets: [{
         label: 'Number of Listings',
-        borderColor: window.chartColors.red,
-        backgroundColor: window.chartColors.red,
+        borderColor: window.chartColors.green,
+        backgroundColor: window.chartColors.green,
         fill: false,
         data: [100, 75, 50, 25, 0],
         yAxisID: 'y-axis-1',
@@ -268,8 +268,8 @@ Promise.all([
   			labels: yearsStr,
   			datasets: [{
   				label: 'Number of Listings',
-  				borderColor: window.chartColors.red,
-  				backgroundColor: window.chartColors.red,
+  				borderColor: window.chartColors.green,
+  				backgroundColor: window.chartColors.green,
   				fill: false,
   				data: histCount,
   				yAxisID: 'y-axis-1',
