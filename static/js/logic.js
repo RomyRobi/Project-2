@@ -59,6 +59,36 @@ d3.json(filepath).then(function(data) {
     }
   }).addTo(myMap);
 
+  var latArray = [];
+  var lngArray = [];
+  var typeArray = [];
+
+  d3.csv("../../data/all_historical_data.csv").then(function(data) {
+    data.forEach(function(d) {
+      if (d.Date == 2018) {
+        latArray.push(d.Latitude),
+        lngArray.push(d.Longitude),
+        typeArray.push(d.Room_Type)
+    }});
+  //  console.log(latArray);
+    var markers = L.markerClusterGroup();
+
+    // Loop through data
+    for (var i = 0; i < latArray.length; i++) {
+
+      // Set the data location property to a variable
+      // Check for location property
+        // Add a new marker to the cluster group and bind a pop-up
+  //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
+        markers.addLayer(L.marker([latArray[i], lngArray[i]]))
+          .bindPopup(latArray[i], lngArray[i], typeArray[i]);
+
+    }
+
+    // Add our marker cluster layer to the map
+    myMap.addLayer(markers);
+  });
+
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
   legend.onAdd = function() {
