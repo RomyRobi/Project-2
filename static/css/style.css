@@ -125,7 +125,7 @@ button:hover {
   width: 100%; /* Set the fixed height of the footer here */
   height: 10px;
   padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 40vh;
   background-color: #F7F7F7;
 }
 
