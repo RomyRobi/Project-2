@@ -45,7 +45,8 @@ var polarChartOptions = {
   title: {
     display: true,
     text: 'Loading...',
-    fontSize: 20
+    fontSize: 20,
+    fontColor: 'rgba(255,90,96,1)'
   },
   scale: {
     ticks: {
@@ -56,6 +57,9 @@ var polarChartOptions = {
   animation: {
     animateRotate: false,
     animateScale: true
+  },
+  layout:{
+    padding: 8
   }
 };
 
@@ -86,15 +90,15 @@ var lineChartData = {
       labels: yearsStr,
       datasets: [{
         label: 'Number of Listings',
-        borderColor: window.chartColors.red,
-        backgroundColor: window.chartColors.red,
+        borderColor: 'rgba(255,90,96,1)',
+        backgroundColor: 'rgba(255,90,96,1)',
         fill: false,
         data: [100, 75, 50, 25, 0],
         yAxisID: 'y-axis-1',
       }, {
         label: 'Average Price',
-        borderColor: window.chartColors.blue,
-        backgroundColor: window.chartColors.blue,
+        borderColor: 'rgba(202,202,202,1)',
+        backgroundColor: 'rgba(202,202,202,1)',
         fill: false,
         data: [0, 25, 50, 75, 100],
         yAxisID: 'y-axis-2'
@@ -113,7 +117,8 @@ var lineChartData = {
         title: {
           display: true,
           text: 'Loading...',
-          fontSize: 20
+          fontSize: 20,
+          fontColor: 'rgba(255,90,96,1)'
         },
         scales: {
           yAxes: [{
@@ -264,24 +269,6 @@ Promise.all([
     histPrice.push(yearPrice);
   });
 
-  var lineChartData = {
-  			labels: yearsStr,
-  			datasets: [{
-  				label: 'Number of Listings',
-  				borderColor: window.chartColors.red,
-  				backgroundColor: window.chartColors.red,
-  				fill: false,
-  				data: histCount,
-  				yAxisID: 'y-axis-1',
-  			}, {
-  				label: 'Average Price',
-  				borderColor: window.chartColors.blue,
-  				backgroundColor: window.chartColors.blue,
-  				fill: false,
-  				data: histPrice,
-  				yAxisID: 'y-axis-2'
-  			}]
-  		};
 
     lineChartData.datasets[0].data = histCount;
     lineChartData.datasets[1].data = histPrice;
@@ -289,41 +276,5 @@ Promise.all([
     lineConfig.data = lineChartData;
     lineChart.update();
 
-    // console.log('loading graph')
-    // var linectx = document.getElementById('line-chart-area').getContext('2d');
-    // lineConfig = {
-    //   type: 'line',
-    //   data: lineChartData,
-    //   options: {
-    //     responsive: true,
-    //     hoverMode: 'index',
-    //     stacked: false,
-    //     title: {
-    //       display: true,
-    //       text: 'Overall Trends',
-    //       fontSize: 20
-    //     },
-    //     scales: {
-    //       yAxes: [{
-    //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-    //         display: true,
-    //         position: 'left',
-    //         id: 'y-axis-1',
-    //       }, {
-    //         type: 'linear', // only linear but allow scale type registration. This allows extensions to exist solely for log scale for instance
-    //         display: true,
-    //         position: 'right',
-    //         id: 'y-axis-2',
-    //
-    //         // grid line settings
-    //         gridLines: {
-    //           drawOnChartArea: false, // only want the grid lines for one axis to show up
-    //         },
-    //       }],
-    //     }
-    //   }
-    // };
-    //
-    // var lineChart = new Chart(linectx, lineConfig);
 
 });
