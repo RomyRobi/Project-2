@@ -84,8 +84,8 @@ d3.json(filepath).then(function(data) {
   //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
         console.log(priceArray[i]);
         var price = priceArray[i];
-        markers.addLayer(L.marker([latArray[i], lngArray[i]]))
-          .bindPopup(`Price: $${price}`);
+        markers.addLayer(L.marker([latArray[i], lngArray[i]])
+          .bindPopup(`Price: $${price}`));
 
     }
 
