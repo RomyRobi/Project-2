@@ -69,12 +69,12 @@ d3.json(filepath).then(function(data) {
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
-        latArray.push(d.Latitude),
-        lngArray.push(d.Longitude),
-        typeArray.push(d.Room_Type),
-        priceArray.push(d.Price)
+        //latArray.push(d.Latitude),
+        //lngArray.push(d.Longitude),
+        //typeArray.push(d.Room_Type),
+        //priceArray.push(d.Price)
 
-        markers.addLayer(L.marker(d.Latitude, d.Longitude))
+        markers.push(L.marker(d.Latitude, d.Longitude))
           .bindPopup(`Price: $${d.Price}`);
     }});
   //  console.log(priceArray);
