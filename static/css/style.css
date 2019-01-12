@@ -92,10 +92,20 @@ button {
   background-color: #FF5A60;
   color: white;
   opacity: 0.6;
+  outline: none;
 }
 
 button:hover {
   opacity: 1;
+}
+
+button:active {
+  outline: none;
+   border: none;
+}
+
+button:focus {
+  outline:0;
 }
 
 #map {
