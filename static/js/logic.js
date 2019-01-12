@@ -1,16 +1,12 @@
-// Creating map object
-var myMap = L.map("map", {
-  center: [40.7189, -74.0000],
-  zoom: 11
-});
+
 
 // Adding tile layer
-L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+var lightmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.light",
   accessToken: API_KEY
-}).addTo(myMap);
+})
 
 // Link to GeoJSON
   var filepath = "static/neighborhoods_price.geojson"
@@ -57,7 +53,7 @@ d3.json(filepath).then(function(data) {
         2014: $${feature.properties['2014']}</br>`
       layer.bindPopup(display);
     }
-  }).addTo(myMap);
+  })
 
   var latArray = [];
   var lngArray = [];
@@ -85,8 +81,6 @@ d3.json(filepath).then(function(data) {
 
     }
 
-    // Add our marker cluster layer to the map
-    myMap.addLayer(markers);
   });
 
   // Set up the legend
@@ -114,7 +108,28 @@ d3.json(filepath).then(function(data) {
     return div;
   };
 
-   //Adding legend to the map
-  legend.addTo(myMap);
+  // Create two separate layer groups: one for cities and one for states
+  var choropleth = L.layerGroup(geojson);
+  var cluster = L.layerGroup(markers);
 
-});
+  // Create a baseMaps object
+  var baseMaps = {
+    "Light Map": lightmap
+  };
+
+  // Create an overlay object
+  var overlayMaps = {
+    "Price Choropleth": choropleth,
+    "Listings Clusdter": cluster
+  };
+
+  // Creating map object
+  var myMap = L.map("map", {
+    center: [40.7189, -74.0000],
+    zoom: 11,
+    layers:[lightmap, choropleth, cluster]
+  });
+
+  L.control.layers(baseMaps, overlayMaps, {
+    collapsed: false
+  }).addTo(myMap);
