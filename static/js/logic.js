@@ -72,7 +72,7 @@ d3.json(filepath).then(function(data) {
         typeArray.push(d.Room_Type),
         priceArray.push(d.Price)
     }});
-  //  console.log(latArray);
+  //  console.log(priceArray);
     var markers = L.markerClusterGroup();
 
     // Loop through data
@@ -82,8 +82,9 @@ d3.json(filepath).then(function(data) {
       // Check for location property
         // Add a new marker to the cluster group and bind a pop-up
   //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
+        console.log(priceArray[1]);
         markers.addLayer(L.marker([latArray[i], lngArray[i]]))
-          .bindPopup(`Price: ${priceArray[i]}`);
+          .bindPopup(`Price: $${priceArray[i]}`);
 
     }
 
