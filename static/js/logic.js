@@ -64,34 +64,30 @@ d3.json(filepath).then(function(data) {
   var typeArray = [];
   var priceArray = [];
 
-  var markers = L.markerClusterGroup();
-
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
-        //latArray.push(d.Latitude),
-        //lngArray.push(d.Longitude),
-        //typeArray.push(d.Room_Type),
-        //priceArray.push(d.Price)
-
-        markers.addLayer(L.marker(d.Latitude, d.Longitude))
-          .bindPopup(`Price: $${d.Price}`);
+        latArray.push(d.Latitude),
+        lngArray.push(d.Longitude),
+        typeArray.push(d.Room_Type),
+        priceArray.push(d.Price)
     }});
   //  console.log(priceArray);
-
+    var markers = L.markerClusterGroup();
 
     // Loop through data
-    //for (var i = 0; i < latArray.length; i++) {
+    for (var i = 0; i < latArray.length; i++) {
 
       // Set the data location property to a variable
       // Check for location property
         // Add a new marker to the cluster group and bind a pop-up
   //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
-        //console.log(priceArray[1]);
-        //markers.addLayer(L.marker([latArray[i], lngArray[i]]))
-          //.bindPopup(`Price: $${priceArray[i]}`);
+        console.log(priceArray[i]);
+        var price = priceArray[i];
+        markers.addLayer(L.marker([latArray[i], lngArray[i]]))
+          .bindPopup(`Price: $${price}`);
 
-    //}
+    }
 
     // Add our marker cluster layer to the map
     myMap.addLayer(markers);
