@@ -62,13 +62,15 @@ d3.json(filepath).then(function(data) {
   var latArray = [];
   var lngArray = [];
   var typeArray = [];
+  var priceArray = [];
 
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
         latArray.push(d.Latitude),
         lngArray.push(d.Longitude),
-        typeArray.push(d.Room_Type)
+        typeArray.push(d.Room_Type),
+        priceArray.push(d.Price)
     }});
   //  console.log(latArray);
     var markers = L.markerClusterGroup();
@@ -81,7 +83,7 @@ d3.json(filepath).then(function(data) {
         // Add a new marker to the cluster group and bind a pop-up
   //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
         markers.addLayer(L.marker([latArray[i], lngArray[i]]))
-          .bindPopup(latArray[i], lngArray[i], typeArray[i]);
+          .bindPopup(`Price: ${priceArray[i]}`);
 
     }
 
