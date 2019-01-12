@@ -82,7 +82,7 @@ d3.json(filepath).then(function(data) {
       // Check for location property
         // Add a new marker to the cluster group and bind a pop-up
   //      markerPopupInfo = ("Latitude: " + latArray[i] + "\n" + "Longitude: " + lngArray);
-        console.log(priceArray[i]);
+        //console.log(priceArray[i]);
         var price = priceArray[i];
         markers.addLayer(L.marker([latArray[i], lngArray[i]])
           .bindPopup(`Price: $${price}`));
