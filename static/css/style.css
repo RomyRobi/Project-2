@@ -99,6 +99,15 @@ button:hover {
   opacity: 1;
 }
 
+button:active {
+  outline: none;
+   border: none;
+}
+
+button:focus {
+  outline:0;
+}
+
 #map {
   position: relative;
 
