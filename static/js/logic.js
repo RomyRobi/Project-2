@@ -71,6 +71,9 @@ d3.json(filepath).then(function(data) {
         lngArray.push(d.Longitude),
         typeArray.push(d.Room_Type),
         priceArray.push(d.Price)
+
+        markers.addLayer(L.marker(d.Latitude, d.Longitude))
+          .bindPopup(`Price: $${d.Price}`);
     }});
   //  console.log(priceArray);
     var markers = L.markerClusterGroup();
