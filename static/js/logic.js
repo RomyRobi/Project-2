@@ -1,12 +1,16 @@
-
+// Creating map object
+var myMap = L.map("map", {
+  center: [40.7189, -74.0000],
+  zoom: 11
+});
 
 // Adding tile layer
-var lightmap = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
+L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
   attribution: "Map data &copy; <a href=\"https://www.openstreetmap.org/\">OpenStreetMap</a> contributors, <a href=\"https://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA</a>, Imagery © <a href=\"https://www.mapbox.com/\">Mapbox</a>",
   maxZoom: 18,
   id: "mapbox.light",
   accessToken: API_KEY
-})
+}).addTo(myMap);
 
 // Link to GeoJSON
   var filepath = "static/neighborhoods_price.geojson"
@@ -53,14 +57,11 @@ d3.json(filepath).then(function(data) {
         2014: $${feature.properties['2014']}</br>`
       layer.bindPopup(display);
     }
-  })
-});
+  }).addTo(myMap);
 
   var latArray = [];
   var lngArray = [];
   var typeArray = [];
-
-  var markers = L.markerClusterGroup();
 
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
@@ -69,6 +70,8 @@ d3.json(filepath).then(function(data) {
         lngArray.push(d.Longitude),
         typeArray.push(d.Room_Type)
     }});
+  //  console.log(latArray);
+    var markers = L.markerClusterGroup();
 
     // Loop through data
     for (var i = 0; i < latArray.length; i++) {
@@ -82,6 +85,8 @@ d3.json(filepath).then(function(data) {
 
     }
 
+    // Add our marker cluster layer to the map
+    myMap.addLayer(markers);
   });
 
   // Set up the legend
@@ -109,28 +114,7 @@ d3.json(filepath).then(function(data) {
     return div;
   };
 
-  // Create two separate layer groups: one for cities and one for states
-  //var choropleth = L.layerGroup(geojson);
-  //var cluster = L.layerGroup(markers);
+   //Adding legend to the map
+  legend.addTo(myMap);
 
-  // Create a baseMaps object
-  var baseMaps = {
-    "Light Map": lightmap
-  };
-
-  // Create an overlay object
-  var overlayMaps = {
-    "Price Choropleth": geojson,
-    "Listings Clusdter": markers
-  };
-
-  // Creating map object
-  var myMap = L.map("map", {
-    center: [40.7189, -74.0000],
-    zoom: 11,
-    layers:[lightmap, geojson, markers]
-  });
-
-  L.control.layers(baseMaps, overlayMaps, {
-    collapsed: false
-  }).addTo(myMap);
+});
