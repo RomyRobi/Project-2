@@ -74,7 +74,7 @@ d3.json(filepath).then(function(data) {
         //typeArray.push(d.Room_Type),
         //priceArray.push(d.Price)
 
-        markers.push(L.marker(d.Latitude, d.Longitude))
+        markers.addLayer(L.marker(d.Latitude, d.Longitude))
           .bindPopup(`Price: $${d.Price}`);
     }});
   //  console.log(priceArray);
