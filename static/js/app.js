@@ -90,15 +90,15 @@ var lineChartData = {
       labels: yearsStr,
       datasets: [{
         label: 'Number of Listings',
-        borderColor: window.chartColors.green,
-        backgroundColor: window.chartColors.green,
+        borderColor: 'rgba(255,90,96,1)',
+        backgroundColor: 'rgba(255,90,96,1)',
         fill: false,
         data: [100, 75, 50, 25, 0],
         yAxisID: 'y-axis-1',
       }, {
         label: 'Average Price',
-        borderColor: window.chartColors.blue,
-        backgroundColor: window.chartColors.blue,
+        borderColor: 'rgba(202,202,202,1)',
+        backgroundColor: 'rgba(202,202,202,1)',
         fill: false,
         data: [0, 25, 50, 75, 100],
         yAxisID: 'y-axis-2'
