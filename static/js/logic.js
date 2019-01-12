@@ -60,6 +60,8 @@ d3.json(filepath).then(function(data) {
   var lngArray = [];
   var typeArray = [];
 
+  var markers = L.markerClusterGroup();
+
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
@@ -67,8 +69,6 @@ d3.json(filepath).then(function(data) {
         lngArray.push(d.Longitude),
         typeArray.push(d.Room_Type)
     }});
-  //  console.log(latArray);
-    var markers = L.markerClusterGroup();
 
     // Loop through data
     for (var i = 0; i < latArray.length; i++) {
