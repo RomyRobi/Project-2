@@ -94,8 +94,8 @@ d3.json(filepath).then(function(data) {
     //}
 
     // Add our marker cluster layer to the map
-    //myMap.addLayer(markers);
-  }).addTo(myMap);
+    myMap.addLayer(markers);
+  });
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
