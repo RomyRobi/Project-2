@@ -110,8 +110,8 @@ d3.json(filepath).then(function(data) {
   };
 
   // Create two separate layer groups: one for cities and one for states
-  var choropleth = L.layerGroup(geojson);
-  var cluster = L.layerGroup(markers);
+  //var choropleth = L.layerGroup(geojson);
+  //var cluster = L.layerGroup(markers);
 
   // Create a baseMaps object
   var baseMaps = {
@@ -120,15 +120,15 @@ d3.json(filepath).then(function(data) {
 
   // Create an overlay object
   var overlayMaps = {
-    "Price Choropleth": choropleth,
-    "Listings Clusdter": cluster
+    "Price Choropleth": geojson,
+    "Listings Clusdter": markers
   };
 
   // Creating map object
   var myMap = L.map("map", {
     center: [40.7189, -74.0000],
     zoom: 11,
-    layers:[lightmap, choropleth, cluster]
+    layers:[lightmap, geojson, markers]
   });
 
   L.control.layers(baseMaps, overlayMaps, {
