@@ -54,6 +54,7 @@ d3.json(filepath).then(function(data) {
       layer.bindPopup(display);
     }
   })
+});
 
   var latArray = [];
   var lngArray = [];
