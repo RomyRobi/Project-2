@@ -63,7 +63,7 @@ d3.json(filepath).then(function(data) {
   var lngArray = [];
   var typeArray = [];
 
-  d3.csv("../../data/all_historical_data.csv").then(function(data) {
+  d3.csv("../all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
         latArray.push(d.Latitude),
