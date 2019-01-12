@@ -64,6 +64,8 @@ d3.json(filepath).then(function(data) {
   var typeArray = [];
   var priceArray = [];
 
+  var markers = L.markerClusterGroup();
+
   d3.csv("static/all_historical_data.csv").then(function(data) {
     data.forEach(function(d) {
       if (d.Date == 2018) {
@@ -76,7 +78,7 @@ d3.json(filepath).then(function(data) {
           .bindPopup(`Price: $${d.Price}`);
     }});
   //  console.log(priceArray);
-    var markers = L.markerClusterGroup();
+
 
     // Loop through data
     //for (var i = 0; i < latArray.length; i++) {
@@ -92,8 +94,8 @@ d3.json(filepath).then(function(data) {
     //}
 
     // Add our marker cluster layer to the map
-    myMap.addLayer(markers);
-  });
+    //myMap.addLayer(markers);
+  }).addTo(myMap);
 
   // Set up the legend
   var legend = L.control({ position: "bottomright" });
